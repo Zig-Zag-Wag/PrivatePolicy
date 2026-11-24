@@ -15,6 +15,8 @@
 
 首页（人看的入口）：https://zig-zag-wag.github.io/PrivatePolicy/
 
+站点已上线（2026-11-24）：仓库 [Zig-Zag-Wag/PrivatePolicy](https://github.com/Zig-Zag-Wag/PrivatePolicy)，Pages 来源 `main` / `/ (root)`，HTTPS 已强制。以后同步完条款，`git push` 一分钟后线上就更新。
+
 ## 目录结构
 
 ```
@@ -72,27 +74,17 @@ node scripts\check-links.js
 4. 新建 `<slug>/index.html`（复制现有某个 App 的索引页，改标题、链接、包名）；
 5. 在根 `index.html` 加一张卡片，在 README 的表里加一行。
 
-## 首次部署（GitHub Pages）
+## 部署（GitHub Pages）
 
-1. 在 GitHub 建一个 **public** 仓库 `PrivatePolicy`（Pages 免费版要求 public）；
-2. 推送本目录：
+当前状态：已开启，`main` 分支根目录直接发布，没有构建步骤；`.nojekyll` 关掉 Jekyll 处理，`.gitattributes` 保证 HTML 以 LF 存储。
 
-   ```powershell
-   cd D:\Projects\PrivatePolicy
-   git init -b main
-   git add -A
-   git commit -m "init: privacy policy site"
-   git remote add origin https://github.com/Zig-Zag-Wag/PrivatePolicy.git
-   git push -u origin main
-   ```
+如果需要重新配置（换仓库、换分支、关掉再开）：
 
-3. 仓库 **Settings → Pages**：
-   - Source: **Deploy from a branch**
-   - Branch: **main**，目录 **/ (root)**
-   - 保存后等 1 分钟左右；
-4. 打开 https://zig-zag-wag.github.io/PrivatePolicy/ 确认首页能开，再逐个点四个 App 的隐私政策链接。
+1. 仓库 **Settings → Pages**；
+2. Source 选 **Deploy from a branch**，Branch 选 **main**，目录 **/ (root)**，保存；
+3. 等 1 分钟左右，打开 https://zig-zag-wag.github.io/PrivatePolicy/ 确认首页能开，再逐个点四个 App 的隐私政策链接。
 
-仓库里没有构建步骤，推上去就是最终文件；`.nojekyll` 用来关掉 Jekyll 处理，避免文件名/路径被改写。
+组织层面的坑：Zig-Zag-Wag 的 **Settings → Member privileges → Pages creation** 原来只勾了 Private，导致仓库里 Pages 显示「disabled」；已勾上 **Public** 才能发布公开站点。换组织或新建组织时记得检查这一项。
 
 ## 维护备注
 
