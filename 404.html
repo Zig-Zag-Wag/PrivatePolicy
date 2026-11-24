@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 · 页面不存在 / Not found</title>
+<meta name="robots" content="noindex">
+<!-- 404 会在任意层级被返回，所以这里不引用外部样式，路径也写死站点前缀 -->
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 48px 20px;
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC",
+          "Microsoft YaHei", sans-serif;
+    color: #14161a;
+    background: #f4f5f7;
+  }
+  h1 { font-size: 32px; margin: 0 0 8px; }
+  p { color: #5b6472; margin: 0 0 24px; max-width: 56ch; }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 7px 15px;
+    border-radius: 10px;
+    border: 1px solid #e3e6eb;
+    background: #fff;
+    color: #14161a;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  a.primary { background: #3b5bdb; border-color: #3b5bdb; color: #fff; }
+  a:hover { border-color: #3b5bdb; color: #3b5bdb; }
+  a.primary:hover { color: #fff; filter: brightness(1.06); }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e9ecf1; background: #0d0f12; }
+    p { color: #9aa3b2; }
+    a { background: #16191f; border-color: #262b34; color: #e9ecf1; }
+    a.primary { background: #8aa4ff; border-color: #8aa4ff; color: #0d0f12; }
+    a:hover { border-color: #8aa4ff; color: #8aa4ff; }
+    a.primary:hover { color: #0d0f12; }
+  }
+</style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>这个地址下没有页面。可能是文件名写错，或者条款文件已改名。<br>
+  There is nothing at this address — the file name may be misspelled or renamed.</p>
+  <div class="actions">
+    <a class="primary" href="/PrivatePolicy/">回到首页 / Home</a>
+    <a href="/PrivatePolicy/morse-craft/">Morse Craft</a>
+    <a href="/PrivatePolicy/id-photo-maker/">ID Photo Maker</a>
+    <a href="/PrivatePolicy/md-reader/">MD Reader</a>
+    <a href="/PrivatePolicy/any-convert/">Any Convert</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ID Photo Maker</title>
+  <style>
+    body {
+      font-family: -apple-system, "Segoe UI", "Noto Sans", "Noto Sans Arabic", "Noto Sans Devanagari",
+                   "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Malgun Gothic", sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 16px 40px;
+      line-height: 1.7;
+      color: #1a1c1e;
+      background: #fff;
+    }
+    h1 { font-size: 22px; }
+    h2 { font-size: 17px; margin-top: 24px; }
+    p, li { font-size: 15px; color: #333; }
+    ul { padding-left: 22px; }
+
+    /* 语言切换栏 */
+    .lang-bar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 0;
+      margin-bottom: 8px;
+      background: #fff;
+      border-bottom: 1px solid #e6e8ea;
+    }
+    .lang-select {
+      appearance: none;
+      -webkit-appearance: none;
+      border: 1px solid #d5d9dd;
+      background: #f6f7f8 url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%23555' d='M1 1l5 5 5-5'/%3E%3C/svg%3E") no-repeat right 12px center;
+      color: #1a1c1e;
+      font-size: 14px;
+      font-family: inherit;
+      padding: 7px 34px 7px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      max-width: 60vw;
+    }
+    .lang-select:focus { outline: 2px solid #1a73e8; outline-offset: 1px; }
+    .copy-btn {
+      margin-left: auto;
+      appearance: none;
+      border: 1px solid #d5d9dd;
+      background: #fff;
+      color: #1a1c1e;
+      font-size: 13px;
+      font-family: inherit;
+      padding: 7px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .copy-btn:hover { background: #f2f4f6; }
+
+    section[data-lang] { display: none; }
+    section[data-lang].active { display: block; }
+
+    @media print {
+      .lang-bar { display: none !important; }
+      section[data-lang] { display: none !important; }
+      section[data-lang].active { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lang-bar">
+    <select class="lang-select" id="langSelect" aria-label="Language">
+      <option value="zh">中文</option>
+      <option value="zh-hant">繁體中文</option>
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+      <option value="pt">Português</option>
+      <option value="it">Italiano</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+      <option value="ru">Русский</option>
+      <option value="ar">العربية</option>
+      <option value="hi">हिन्दी</option>
+      <option value="tr">Türkçe</option>
+      <option value="id">Bahasa Indonesia</option>
+    </select>
+    <button class="copy-btn" type="button" id="copyBtn">复制当前语言全文</button>
+  </div>
+
+  <!-- ================= 简体中文 ================= -->
+  <section data-lang="zh" lang="zh-CN">
+    <h1>隐私政策</h1>
+
+    <h2>引言</h2>
+    <p>欢迎使用 证件照制作（ID Photo Maker）。本应用是一款纯本地、离线的证件照制作工具，提供去除背景、自由擦除、西装贴图、填充背景、尺寸调整与打印排版等功能。我们高度重视您的隐私，本政策旨在清晰说明本应用如何处理（更准确地说，是如何不处理）您的数据。</p>
+
+    <h2>数据收集</h2>
+    <p>本应用不收集、不存储、不上传任何个人信息。所有功能均在您的设备本地完成，无需联网。</p>
+    <ul>
+      <li>不采集任何个人身份信息（如姓名、邮箱、电话、位置等）</li>
+      <li>不采集设备广告标识符（不含 IDFA、AAID / 广告 ID、IMEI 等）</li>
+      <li>不发起任何网络请求，不向任何服务器上传数据</li>
+      <li>不集成任何第三方统计、追踪或广告 SDK</li>
+    </ul>
+
+    <h2>照片处理</h2>
+    <p>您选择的照片仅在设备本地被读取并处理（包括去背景、擦除、西装贴图、填充背景、尺寸调整、打印排版等），处理结果仅保存到您的系统相册。我们绝不访问、上传、存储或向任何第三方分享您的照片及处理结果。</p>
+
+    <h2>相册权限用途</h2>
+    <p>本应用仅在以下两个场景使用相册相关能力：</p>
+    <ul>
+      <li>选择照片：通过系统提供的照片选择器（PHPicker / Photo Picker）选择照片，该过程不会授予本应用读取您整个相册的权限</li>
+      <li>保存结果：为将处理结果写入您的相册，会请求「仅添加照片」权限，本应用不会读取、修改或删除相册中的其他照片</li>
+    </ul>
+
+    <h2>第三方服务、广告与内购</h2>
+    <p>本应用免费、无广告、无内购，不集成任何广告 SDK、统计分析 SDK 或第三方追踪服务，因此不存在跨应用或跨站点的数据追踪，也无需任何广告标识符授权（如 iOS ATT / IDFA 或 Android AD_ID）。</p>
+
+    <h2>儿童隐私</h2>
+    <p>本应用不面向 13 周岁以下儿童，且不收集任何用户的个人信息。</p>
+
+    <h2>政策变更</h2>
+    <p>若未来本隐私政策发生变更，我们将在应用内更新本页面，恕不另行逐一通知。</p>
+
+    <h2>免责声明</h2>
+    <p>本应用为本地照片处理工具，生成的证件照仅作一般参考。用户应确保对所处理的照片拥有合法权利，并自行确认处理结果符合相关报名、登记或证件机构的具体要求；因用户自身使用行为产生的后果由用户自行承担（在适用法律允许的范围内）。</p>
+
+    <h2>联系我们</h2>
+    <p>如对本隐私政策有任何疑问、意见或建议，请通过以下方式联系我们：vissachafnaoui197@gmail.com。</p>
+  </section>
+
+  <section data-lang="zh-hant" lang="zh-Hant">
+    <h1>隱私權政策</h1>
+
+    <h2>前言</h2>
+    <p>歡迎使用 證件照製作（ID Photo Maker）。本應用程式是一款純本機、離線的證件照製作工具，提供去背、自由擦除、西裝貼圖、填滿背景、尺寸調整與列印排版等功能。我們高度重視您的隱私，本政策旨在清楚說明本應用程式如何處理（更準確地說，是如何不處理）您的資料。</p>
+
+    <h2>資料收集</h2>
+    <p>本應用程式不收集、不儲存、不上傳任何個人資訊。所有功能皆在您的裝置本機完成，無需連線網路。</p>
+    <ul>
+      <li>不蒐集任何個人身分資訊（如姓名、電子郵件、電話、位置等）</li>
+      <li>不蒐集裝置廣告識別碼（不含 IDFA、AAID／廣告 ID、IMEI 等）</li>
+      <li>不發起任何網路請求，不向任何伺服器上傳資料</li>
+      <li>不整合任何第三方統計、追蹤或廣告 SDK</li>
+    </ul>
+
+    <h2>照片處理</h2>
+    <p>您選擇的照片僅在裝置本機被讀取與處理（包括去背、擦除、西裝貼圖、填滿背景、尺寸調整、列印排版等），處理結果僅儲存至您的系統相簿。我們絕不會存取、上傳、儲存或與任何第三方分享您的照片及處理結果。</p>
+
+    <h2>相簿權限用途</h2>
+    <p>本應用程式僅在下列兩種情況使用相簿相關功能：</p>
+    <ul>
+      <li>選擇照片：透過系統提供的照片選擇器（PHPicker／Photo Picker）選擇照片，此過程不會授予本應用程式讀取您整個相簿的權限</li>
+      <li>儲存結果：為將處理結果寫入您的相簿，會請求「僅新增照片」權限，本應用程式不會讀取、修改或刪除相簿中的其他照片</li>
+    </ul>
+
+    <h2>第三方服務、廣告與內購</h2>
+    <p>本應用程式免費、無廣告、無內購，不整合任何廣告 SDK、統計分析 SDK 或第三方追蹤服務，因此不存在跨應用程式或跨網站的資料追蹤，也無需任何廣告識別碼授權（如 iOS ATT／IDFA 或 Android AD_ID）。</p>
+
+    <h2>兒童隱私</h2>
+    <p>本應用程式並非針對 13 歲以下兒童，且不收集任何使用者的個人資訊。</p>
+
+    <h2>政策變更</h2>
+    <p>若未來本隱私權政策有所變更，我們將在應用程式內更新本頁面，恕不另行逐一通知。</p>
+
+    <h2>免責聲明</h2>
+    <p>本應用程式為本機照片處理工具，產生的證件照僅供一般參考。使用者應確保對所處理的照片擁有合法權利，並自行確認處理結果符合相關報名、登記或證件機構的具體要求；因使用者自身使用行為所產生的後果由使用者自行承擔（在適用法律允許的範圍內）。</p>
+
+    <h2>聯絡我們</h2>
+    <p>如對本隱私權政策有任何疑問、意見或建議，請透過以下方式與我們聯絡：vissachafnaoui197@gmail.com。</p>
+  </section>
+
+  <!-- ================= English ================= -->
+  <section data-lang="en" lang="en">
+    <h1>Privacy Policy</h1>
+
+    <h2>Introduction</h2>
+    <p>Welcome to ID Photo Maker, a purely local, offline ID-photo creation tool. It provides background removal, free erasing, suit overlays, background filling, size adjustment, and print layout. We take your privacy seriously. This policy clearly explains how this app handles (or rather, does not handle) your data.</p>
+
+    <h2>Data Collection</h2>
+    <p>This app does not collect, store, or upload any personal information. All functionality runs entirely on your device and requires no network connection.</p>
+    <ul>
+      <li>No personally identifiable information is collected (such as name, email, phone number, or location)</li>
+      <li>No device advertising identifiers are collected (no IDFA, AAID / advertising ID, IMEI, etc.)</li>
+      <li>No network requests are made, and no data is uploaded to any server</li>
+      <li>No third-party analytics, tracking, or advertising SDKs are integrated</li>
+    </ul>
+
+    <h2>Photo Processing</h2>
+    <p>Photos you select are read and processed only on your device (including background removal, erasing, suit overlays, background filling, size adjustment, and print layout). The results are saved only to your system photo library. We never access, upload, store, or share your photos or processed results with any third party.</p>
+
+    <h2>Photo Library Permissions</h2>
+    <p>This app uses photo library capabilities only in the following two scenarios:</p>
+    <ul>
+      <li>Selecting a photo: photos are chosen through the system photo picker (PHPicker / Photo Picker), which does not grant this app access to read your entire library</li>
+      <li>Saving results: to write the processed result to your library, this app requests "add photos only" access. It does not read, modify, or delete any other photos in your library</li>
+    </ul>
+
+    <h2>Third-Party Services, Ads, and Purchases</h2>
+    <p>This app is free, ad-free, and has no in-app purchases. It integrates no advertising SDK, analytics SDK, or third-party tracking services, so there is no cross-app or cross-site data tracking, and no advertising identifier authorization is required (such as iOS ATT / IDFA or Android AD_ID).</p>
+
+    <h2>Children's Privacy</h2>
+    <p>This app is not directed to children under the age of 13 and does not collect personal information from any user.</p>
+
+    <h2>Policy Changes</h2>
+    <p>If this privacy policy changes in the future, we will update this page within the app without further individual notice.</p>
+
+    <h2>Disclaimer</h2>
+    <p>This app is a local photo processing tool; the generated ID photos are for general reference only. You are responsible for ensuring you have the legal rights to the photos you process and for confirming that the results meet the specific requirements of the relevant registration, enrollment, or ID-issuing authority. You bear the consequences arising from your own use of this app (to the extent permitted by applicable law).</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions, comments, or suggestions about this privacy policy, please contact us at: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= Español ================= -->
+  <section data-lang="es" lang="es">
+    <h1>Política de Privacidad</h1>
+
+    <h2>Introducción</h2>
+    <p>Bienvenido a ID Photo Maker, una herramienta de creación de fotos de carné totalmente local y sin conexión. Ofrece eliminación de fondo, borrado libre, superposición de trajes, relleno de fondo, ajuste de tamaño y composición para impresión. Nos tomamos muy en serio tu privacidad. Esta política explica claramente cómo esta aplicación trata (o más bien, no trata) tus datos.</p>
+
+    <h2>Recopilación de datos</h2>
+    <p>Esta aplicación no recopila, almacena ni sube ninguna información personal. Todas las funciones se ejecutan íntegramente en tu dispositivo y no requieren conexión a la red.</p>
+    <ul>
+      <li>No se recopila ninguna información de identificación personal (como nombre, correo electrónico, número de teléfono o ubicación)</li>
+      <li>No se recopilan identificadores de publicidad del dispositivo (ni IDFA, ni AAID / ID de publicidad, ni IMEI, etc.)</li>
+      <li>No se realizan solicitudes de red ni se suben datos a ningún servidor</li>
+      <li>No se integra ningún SDK de análisis, seguimiento o publicidad de terceros</li>
+    </ul>
+
+    <h2>Tratamiento de las fotos</h2>
+    <p>Las fotos que seleccionas solo se leen y procesan en tu dispositivo (incluida la eliminación de fondo, el borrado, la superposición de trajes, el relleno de fondo, el ajuste de tamaño y la composición para impresión). Los resultados se guardan únicamente en la galería de fotos de tu sistema. Nunca accedemos, subimos, almacenamos ni compartimos tus fotos ni los resultados procesados con ningún tercero.</p>
+
+    <h2>Permisos de la galería de fotos</h2>
+    <p>Esta aplicación utiliza las funciones de la galería solo en los dos casos siguientes:</p>
+    <ul>
+      <li>Seleccionar una foto: las fotos se eligen mediante el selector de fotos del sistema (PHPicker / Photo Picker), que no concede a esta aplicación acceso para leer toda tu galería</li>
+      <li>Guardar resultados: para escribir el resultado procesado en tu galería, esta aplicación solicita permiso de «solo añadir fotos». No lee, modifica ni elimina ninguna otra foto de tu galería</li>
+    </ul>
+
+    <h2>Servicios de terceros, publicidad y compras</h2>
+    <p>Esta aplicación es gratuita, sin anuncios y sin compras integradas. No integra ningún SDK de publicidad, SDK de análisis ni servicios de seguimiento de terceros, por lo que no existe seguimiento de datos entre aplicaciones ni entre sitios, y no se requiere ninguna autorización de identificador de publicidad (como iOS ATT / IDFA o Android AD_ID).</p>
+
+    <h2>Privacidad de los menores</h2>
+    <p>Esta aplicación no está dirigida a menores de 13 años y no recopila información personal de ningún usuario.</p>
+
+    <h2>Cambios en la política</h2>
+    <p>Si esta política de privacidad cambia en el futuro, actualizaremos esta página dentro de la aplicación sin notificación individual adicional.</p>
+
+    <h2>Aviso legal</h2>
+    <p>Esta aplicación es una herramienta local de procesamiento de fotos; las fotos de carné generadas son solo de referencia general. Eres responsable de asegurarte de que tienes los derechos legales sobre las fotos que procesas y de confirmar que los resultados cumplen los requisitos específicos de la autoridad de registro, matriculación o expedición de documentos correspondiente. Asumes las consecuencias derivadas de tu propio uso de esta aplicación (en la medida permitida por la ley aplicable).</p>
+
+    <h2>Contacto</h2>
+    <p>Si tienes alguna pregunta, comentario o sugerencia sobre esta política de privacidad, ponte en contacto con nosotros en: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= Français ================= -->
+  <section data-lang="fr" lang="fr">
+    <h1>Politique de Confidentialité</h1>
+
+    <h2>Introduction</h2>
+    <p>Bienvenue dans ID Photo Maker, un outil de création de photos d'identité entièrement local et hors ligne. Il propose la suppression d'arrière-plan, l'effacement libre, la superposition de tenues, le remplissage d'arrière-plan, le réglage de la taille et la mise en page pour l'impression. Nous prenons votre vie privée très au sérieux. Cette politique explique clairement comment cette application traite (ou plutôt ne traite pas) vos données.</p>
+
+    <h2>Collecte de données</h2>
+    <p>Cette application ne collecte, ne stocke et ne téléverse aucune information personnelle. Toutes les fonctionnalités s'exécutent entièrement sur votre appareil et ne nécessitent aucune connexion réseau.</p>
+    <ul>
+      <li>Aucune information personnelle identifiable n'est collectée (nom, e-mail, numéro de téléphone, localisation, etc.)</li>
+      <li>Aucun identifiant publicitaire de l'appareil n'est collecté (ni IDFA, ni AAID / ID publicitaire, ni IMEI, etc.)</li>
+      <li>Aucune requête réseau n'est effectuée et aucune donnée n'est téléversée vers un serveur</li>
+      <li>Aucun SDK tiers d'analyse, de suivi ou de publicité n'est intégré</li>
+    </ul>
+
+    <h2>Traitement des photos</h2>
+    <p>Les photos que vous sélectionnez sont uniquement lues et traitées sur votre appareil (y compris la suppression d'arrière-plan, l'effacement, la superposition de tenues, le remplissage d'arrière-plan, le réglage de la taille et la mise en page pour l'impression). Les résultats sont enregistrés uniquement dans la galerie de photos de votre système. Nous n'accédons jamais à vos photos ni aux résultats traités, et nous ne les téléversons, ne les stockons ni ne les partageons avec un tiers.</p>
+
+    <h2>Autorisations d'accès à la galerie</h2>
+    <p>Cette application n'utilise les fonctionnalités de la galerie que dans les deux cas suivants :</p>
+    <ul>
+      <li>Sélection d'une photo : les photos sont choisies via le sélecteur de photos du système (PHPicker / Photo Picker), qui n'accorde pas à cette application l'accès à l'ensemble de votre galerie</li>
+      <li>Enregistrement des résultats : pour écrire le résultat traité dans votre galerie, cette application demande l'autorisation « ajouter des photos uniquement ». Elle ne lit, ne modifie et ne supprime aucune autre photo de votre galerie</li>
+    </ul>
+
+    <h2>Services tiers, publicité et achats</h2>
+    <p>Cette application est gratuite, sans publicité et sans achats intégrés. Elle n'intègre aucun SDK publicitaire, aucun SDK d'analyse ni aucun service de suivi tiers ; il n'existe donc aucun suivi de données entre applications ou entre sites, et aucune autorisation d'identifiant publicitaire n'est requise (comme iOS ATT / IDFA ou Android AD_ID).</p>
+
+    <h2>Confidentialité des enfants</h2>
+    <p>Cette application ne s'adresse pas aux enfants de moins de 13 ans et ne collecte aucune information personnelle auprès de quelque utilisateur que ce soit.</p>
+
+    <h2>Modifications de la politique</h2>
+    <p>Si cette politique de confidentialité est modifiée à l'avenir, nous mettrons à jour cette page au sein de l'application, sans notification individuelle supplémentaire.</p>
+
+    <h2>Avis de non-responsabilité</h2>
+    <p>Cette application est un outil local de traitement de photos ; les photos d'identité générées ne sont fournies qu'à titre indicatif. Il vous appartient de vous assurer que vous disposez des droits légaux sur les photos que vous traitez et de vérifier que les résultats respectent les exigences spécifiques de l'autorité d'inscription, d'immatriculation ou de délivrance de documents concernée. Vous assumez les conséquences découlant de votre propre utilisation de cette application (dans la mesure permise par la loi applicable).</p>
+
+    <h2>Nous contacter</h2>
+    <p>Si vous avez des questions, des commentaires ou des suggestions concernant cette politique de confidentialité, veuillez nous contacter à l'adresse : vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= Deutsch ================= -->
+  <section data-lang="de" lang="de">
+    <h1>Datenschutzerklärung</h1>
+
+    <h2>Einleitung</h2>
+    <p>Willkommen bei ID Photo Maker, einem vollständig lokalen Offline-Tool zur Erstellung von Passfotos. Es bietet Hintergrundentfernung, freies Radieren, Anziehen von Anzügen, Hintergrundfüllung, Größenanpassung und Drucklayout. Wir nehmen Ihre Privatsphäre sehr ernst. Diese Erklärung erläutert klar, wie diese App mit Ihren Daten umgeht (oder genauer gesagt, nicht umgeht).</p>
+
+    <h2>Datenerfassung</h2>
+    <p>Diese App sammelt, speichert und überträgt keine personenbezogenen Daten. Alle Funktionen laufen vollständig auf Ihrem Gerät und erfordern keine Netzwerkverbindung.</p>
+    <ul>
+      <li>Es werden keine personenbezogenen Daten erfasst (z. B. Name, E-Mail, Telefonnummer oder Standort)</li>
+      <li>Es werden keine Werbe-IDs des Geräts erfasst (kein IDFA, keine AAID / Werbe-ID, keine IMEI usw.)</li>
+      <li>Es werden keine Netzwerkanfragen gestellt und keine Daten auf einen Server hochgeladen</li>
+      <li>Es sind keine Analyse-, Tracking- oder Werbe-SDKs von Drittanbietern integriert</li>
+    </ul>
+
+    <h2>Fotoverarbeitung</h2>
+    <p>Die von Ihnen ausgewählten Fotos werden ausschließlich auf Ihrem Gerät gelesen und verarbeitet (einschließlich Hintergrundentfernung, Radieren, Anziehen von Anzügen, Hintergrundfüllung, Größenanpassung und Drucklayout). Die Ergebnisse werden nur in der Fotogalerie Ihres Systems gespeichert. Wir greifen niemals auf Ihre Fotos oder verarbeiteten Ergebnisse zu, laden sie hoch, speichern sie oder geben sie an Dritte weiter.</p>
+
+    <h2>Berechtigungen für die Fotogalerie</h2>
+    <p>Diese App nutzt die Fotogalerie nur in den folgenden zwei Fällen:</p>
+    <ul>
+      <li>Fotoauswahl: Fotos werden über die System-Fotoauswahl (PHPicker / Photo Picker) ausgewählt; dadurch erhält diese App keinen Zugriff auf Ihre gesamte Galerie</li>
+      <li>Ergebnisse speichern: Um das verarbeitete Ergebnis in Ihrer Galerie zu speichern, fordert diese App die Berechtigung „Nur Fotos hinzufügen“ an. Sie liest, ändert oder löscht keine anderen Fotos in Ihrer Galerie</li>
+    </ul>
+
+    <h2>Dienste von Drittanbietern, Werbung und Käufe</h2>
+    <p>Diese App ist kostenlos, werbefrei und ohne In-App-Käufe. Sie integriert kein Werbe-SDK, kein Analyse-SDK und keine Tracking-Dienste von Drittanbietern; daher gibt es kein app- oder websiteübergreifendes Datentracking und es ist keine Autorisierung von Werbe-IDs erforderlich (wie iOS ATT / IDFA oder Android AD_ID).</p>
+
+    <h2>Privatsphäre von Kindern</h2>
+    <p>Diese App richtet sich nicht an Kinder unter 13 Jahren und erfasst von keinem Nutzer personenbezogene Daten.</p>
+
+    <h2>Änderungen dieser Erklärung</h2>
+    <p>Sollte sich diese Datenschutzerklärung künftig ändern, aktualisieren wir diese Seite innerhalb der App, ohne gesonderte Einzelbenachrichtigung.</p>
+
+    <h2>Haftungsausschluss</h2>
+    <p>Diese App ist ein lokales Fotoverarbeitungswerkzeug; die erzeugten Passfotos dienen nur als allgemeine Orientierung. Sie sind dafür verantwortlich, dass Sie über die erforderlichen Rechte an den verarbeiteten Fotos verfügen, und dafür, dass die Ergebnisse den spezifischen Anforderungen der zuständigen Anmelde-, Einschreibungs- oder Ausstellungsbehörde entsprechen. Die Folgen Ihrer eigenen Verwendung dieser App tragen Sie selbst (im gesetzlich zulässigen Umfang).</p>
+
+    <h2>Kontakt</h2>
+    <p>Wenn Sie Fragen, Kommentare oder Anregungen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= Português ================= -->
+  <section data-lang="pt" lang="pt">
+    <h1>Política de Privacidade</h1>
+
+    <h2>Introdução</h2>
+    <p>Bem-vindo ao ID Photo Maker, uma ferramenta totalmente local e offline de criação de fotos de documento. Ele oferece remoção de fundo, apagamento livre, sobreposição de trajes, preenchimento de fundo, ajuste de tamanho e layout para impressão. Levamos sua privacidade a sério. Esta política explica claramente como este aplicativo trata (ou melhor, não trata) seus dados.</p>
+
+    <h2>Coleta de dados</h2>
+    <p>Este aplicativo não coleta, armazena nem envia nenhuma informação pessoal. Todas as funcionalidades são executadas inteiramente no seu dispositivo e não exigem conexão de rede.</p>
+    <ul>
+      <li>Nenhuma informação de identificação pessoal é coletada (como nome, e-mail, telefone ou localização)</li>
+      <li>Nenhum identificador de publicidade do dispositivo é coletado (sem IDFA, AAID / ID de publicidade, IMEI etc.)</li>
+      <li>Nenhuma requisição de rede é feita e nenhum dado é enviado a qualquer servidor</li>
+      <li>Nenhum SDK de análise, rastreamento ou publicidade de terceiros é integrado</li>
+    </ul>
+
+    <h2>Processamento de fotos</h2>
+    <p>As fotos que você seleciona são lidas e processadas apenas no seu dispositivo (incluindo remoção de fundo, apagamento, sobreposição de trajes, preenchimento de fundo, ajuste de tamanho e layout para impressão). Os resultados são salvos apenas na galeria de fotos do seu sistema. Nunca acessamos, enviamos, armazenamos ou compartilhamos suas fotos ou resultados processados com qualquer terceiro.</p>
+
+    <h2>Permissões da galeria de fotos</h2>
+    <p>Este aplicativo utiliza os recursos da galeria apenas nas duas situações a seguir:</p>
+    <ul>
+      <li>Selecionar uma foto: as fotos são escolhidas pelo seletor de fotos do sistema (PHPicker / Photo Picker), que não concede a este aplicativo acesso para ler toda a sua galeria</li>
+      <li>Salvar resultados: para gravar o resultado processado na sua galeria, este aplicativo solicita a permissão «somente adicionar fotos». Ele não lê, modifica nem exclui nenhuma outra foto da sua galeria</li>
+    </ul>
+
+    <h2>Serviços de terceiros, anúncios e compras</h2>
+    <p>Este aplicativo é gratuito, sem anúncios e sem compras no aplicativo. Não integra nenhum SDK de publicidade, SDK de análise ou serviço de rastreamento de terceiros, portanto não há rastreamento de dados entre aplicativos ou sites, e nenhuma autorização de identificador de publicidade é necessária (como iOS ATT / IDFA ou Android AD_ID).</p>
+
+    <h2>Privacidade de crianças</h2>
+    <p>Este aplicativo não é direcionado a crianças menores de 13 anos e não coleta informações pessoais de nenhum usuário.</p>
+
+    <h2>Alterações nesta política</h2>
+    <p>Se esta política de privacidade mudar no futuro, atualizaremos esta página dentro do aplicativo, sem aviso individual adicional.</p>
+
+    <h2>Isenção de responsabilidade</h2>
+    <p>Este aplicativo é uma ferramenta local de processamento de fotos; as fotos de documento geradas servem apenas como referência geral. Você é responsável por garantir que possui os direitos legais sobre as fotos que processa e por confirmar que os resultados atendem aos requisitos específicos da autoridade de inscrição, matrícula ou emissão de documentos competente. Você assume as consequências decorrentes do seu próprio uso deste aplicativo (na medida permitida pela lei aplicável).</p>
+
+    <h2>Fale conosco</h2>
+    <p>Se você tiver dúvidas, comentários ou sugestões sobre esta política de privacidade, entre em contato conosco em: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= Italiano ================= -->
+  <section data-lang="it" lang="it">
+    <h1>Informativa sulla Privacy</h1>
+
+    <h2>Introduzione</h2>
+    <p>Benvenuto in ID Photo Maker, uno strumento per creare foto tessera completamente locale e offline. Offre rimozione dello sfondo, cancellazione libera, sovrapposizione di abiti, riempimento dello sfondo, regolazione delle dimensioni e impaginazione per la stampa. Prendiamo molto sul serio la tua privacy. Questa informativa spiega chiaramente come questa app tratta (o meglio, non tratta) i tuoi dati.</p>
+
+    <h2>Raccolta dei dati</h2>
+    <p>Questa app non raccoglie, memorizza o carica alcuna informazione personale. Tutte le funzionalità vengono eseguite interamente sul tuo dispositivo e non richiedono connessione di rete.</p>
+    <ul>
+      <li>Non viene raccolta alcuna informazione di identificazione personale (come nome, email, numero di telefono o posizione)</li>
+      <li>Non vengono raccolti identificatori pubblicitari del dispositivo (nessun IDFA, AAID / ID pubblicitario, IMEI, ecc.)</li>
+      <li>Non vengono effettuate richieste di rete e nessun dato viene caricato su alcun server</li>
+      <li>Non è integrato alcun SDK pubblicitario, di analisi o di tracciamento di terze parti</li>
+    </ul>
+
+    <h2>Trattamento delle foto</h2>
+    <p>Le foto selezionate vengono lette ed elaborate solo sul tuo dispositivo (inclusi rimozione dello sfondo, cancellazione, sovrapposizione di abiti, riempimento dello sfondo, regolazione delle dimensioni e impaginazione per la stampa). I risultati vengono salvati solo nella galleria foto del sistema. Non accediamo mai alle tue foto o ai risultati elaborati, non li carichiamo, non li memorizziamo e non li condividiamo con alcuna terza parte.</p>
+
+    <h2>Autorizzazioni della galleria foto</h2>
+    <p>Questa app utilizza le funzionalità della galleria solo nei due seguenti casi:</p>
+    <ul>
+      <li>Selezione di una foto: le foto vengono scelte tramite il selettore foto di sistema (PHPicker / Photo Picker), che non concede a questa app l'accesso in lettura all'intera galleria</li>
+      <li>Salvataggio dei risultati: per scrivere il risultato elaborato nella tua galleria, questa app richiede l'autorizzazione «solo aggiunta foto». Non legge, modifica o elimina altre foto presenti nella tua galleria</li>
+    </ul>
+
+    <h2>Servizi di terze parti, pubblicità e acquisti</h2>
+    <p>Questa app è gratuita, senza pubblicità e senza acquisti in-app. Non integra alcun SDK pubblicitario, SDK di analisi o servizio di tracciamento di terze parti, quindi non esiste alcun tracciamento dei dati tra app o siti e non è necessaria alcuna autorizzazione dell'identificatore pubblicitario (come iOS ATT / IDFA o Android AD_ID).</p>
+
+    <h2>Privacy dei minori</h2>
+    <p>Questa app non è rivolta a minori di 13 anni e non raccoglie informazioni personali da alcun utente.</p>
+
+    <h2>Modifiche all'informativa</h2>
+    <p>Se in futuro questa informativa sulla privacy dovesse cambiare, aggiorneremo questa pagina all'interno dell'app senza ulteriori comunicazioni individuali.</p>
+
+    <h2>Esclusione di responsabilità</h2>
+    <p>Questa app è uno strumento locale di elaborazione di foto; le foto tessera generate sono solo a scopo di riferimento generale. Sei responsabile di assicurarti di avere i diritti legali sulle foto che elabori e di verificare che i risultati soddisfino i requisiti specifici dell'autorità competente per l'iscrizione, l'immatricolazione o il rilascio dei documenti. Le conseguenze derivanti dal tuo utilizzo di questa app sono a tuo carico (nella misura consentita dalla legge applicabile).</p>
+
+    <h2>Contattaci</h2>
+    <p>Se hai domande, commenti o suggerimenti su questa informativa sulla privacy, contattaci all'indirizzo: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= 日本語 ================= -->
+  <section data-lang="ja" lang="ja">
+    <h1>プライバシーポリシー</h1>
+
+    <h2>はじめに</h2>
+    <p>「ID Photo Maker（証明写真メーカー）」へようこそ。本アプリは完全にローカルで動作するオフラインの証明写真作成ツールです。背景の削除、自由消去、スーツの重ね合わせ、背景の塗りつぶし、サイズ調整、印刷レイアウトなどの機能を提供します。当社はお客様のプライバシーを重視しています。本ポリシーでは、本アプリがお客様のデータをどのように取り扱うか（正確には、取り扱わないか）を明確に説明します。</p>
+
+    <h2>データの収集</h2>
+    <p>本アプリは、いかなる個人情報も収集、保存、アップロードしません。すべての機能はお客様の端末上で完全に実行され、ネットワーク接続を必要としません。</p>
+    <ul>
+      <li>個人を識別できる情報（氏名、メールアドレス、電話番号、位置情報など）は収集しません</li>
+      <li>端末の広告識別子（IDFA、AAID / 広告 ID、IMEI など）は収集しません</li>
+      <li>ネットワークリクエストを一切行わず、いかなるサーバーにもデータをアップロードしません</li>
+      <li>第三者の解析・追跡・広告 SDK を一切組み込んでいません</li>
+    </ul>
+
+    <h2>写真の処理</h2>
+    <p>お客様が選択した写真は、端末上でのみ読み込まれ処理されます（背景の削除、消去、スーツの重ね合わせ、背景の塗りつぶし、サイズ調整、印刷レイアウトなどを含みます）。処理結果は端末のフォトライブラリにのみ保存されます。当社はお客様の写真および処理結果へのアクセス、アップロード、保存、または第三者との共有を行うことは一切ありません。</p>
+
+    <h2>フォトライブラリの権限</h2>
+    <p>本アプリがフォトライブラリの機能を使用するのは、以下の 2 つの場面のみです。</p>
+    <ul>
+      <li>写真の選択：システムの写真選択ツール（PHPicker / Photo Picker）を通じて写真を選択します。この操作によって本アプリがフォトライブラリ全体を読み取る権限が付与されることはありません</li>
+      <li>結果の保存：処理結果をフォトライブラリに書き込むため、「写真の追加のみ」権限を要求します。フォトライブラリ内の他の写真を読み取り、変更、削除することはありません</li>
+    </ul>
+
+    <h2>第三者サービス、広告、アプリ内課金</h2>
+    <p>本アプリは無料で、広告もアプリ内課金もありません。広告 SDK、解析 SDK、第三者の追跡サービスを一切組み込んでいないため、アプリ間・サイト間のデータ追跡は存在せず、広告識別子の許可（iOS ATT / IDFA や Android AD_ID など）も不要です。</p>
+
+    <h2>児童のプライバシー</h2>
+    <p>本アプリは 13 歳未満の児童を対象としておらず、いかなるユーザーからも個人情報を収集しません。</p>
+
+    <h2>ポリシーの変更</h2>
+    <p>今後本プライバシーポリシーを変更する場合は、アプリ内で本ページを更新します。個別の通知は行いません。</p>
+
+    <h2>免責事項</h2>
+    <p>本アプリはローカルの写真処理ツールであり、生成される証明写真はあくまで参考用です。お客様は、処理する写真について合法的な権利を有していることを確認し、処理結果が関連する申込み・登録・発行機関の具体的な要件を満たしていることをご自身で確認する責任を負います。本アプリのご利用に起因する結果については、お客様ご自身が負担するものとします（適用法で認められる範囲において）。</p>
+
+    <h2>お問い合わせ</h2>
+    <p>本プライバシーポリシーについてご質問、ご意見、ご提案がございましたら、以下までご連絡ください：vissachafnaoui197@gmail.com</p>
+  </section>
+
+  <!-- ================= 한국어 ================= -->
+  <section data-lang="ko" lang="ko">
+    <h1>개인정보 처리방침</h1>
+
+    <h2>소개</h2>
+    <p>ID Photo Maker(증명사진 메이커)에 오신 것을 환영합니다. 본 앱은 완전히 로컬에서 동작하는 오프라인 증명사진 제작 도구로, 배경 제거, 자유 지우기, 정장 합성, 배경 채우기, 크기 조정, 인쇄 배치 기능을 제공합니다. 저희는 이용자의 개인정보를 매우 중요하게 생각합니다. 본 방침은 본 앱이 이용자의 데이터를 어떻게 처리하는지(정확히는 처리하지 않는지)를 명확히 설명합니다.</p>
+
+    <h2>데이터 수집</h2>
+    <p>본 앱은 어떠한 개인정보도 수집, 저장 또는 업로드하지 않습니다. 모든 기능은 전적으로 이용자의 기기에서 실행되며 네트워크 연결이 필요하지 않습니다.</p>
+    <ul>
+      <li>개인 식별 정보(이름, 이메일, 전화번호, 위치 등)를 수집하지 않습니다</li>
+      <li>기기 광고 식별자(IDFA, AAID / 광고 ID, IMEI 등)를 수집하지 않습니다</li>
+      <li>네트워크 요청을 전혀 수행하지 않으며 어떤 서버에도 데이터를 업로드하지 않습니다</li>
+      <li>제3자 분석, 추적 또는 광고 SDK를 일절 포함하지 않습니다</li>
+    </ul>
+
+    <h2>사진 처리</h2>
+    <p>이용자가 선택한 사진은 기기에서만 읽히고 처리됩니다(배경 제거, 지우기, 정장 합성, 배경 채우기, 크기 조정, 인쇄 배치 포함). 처리 결과는 시스템 사진 보관함에만 저장됩니다. 저희는 이용자의 사진 및 처리 결과에 절대 접근, 업로드, 저장하거나 제3자와 공유하지 않습니다.</p>
+
+    <h2>사진 보관함 권한</h2>
+    <p>본 앱은 다음 두 가지 경우에만 사진 보관함 기능을 사용합니다.</p>
+    <ul>
+      <li>사진 선택: 시스템 사진 선택기(PHPicker / Photo Picker)를 통해 사진을 선택하며, 이 과정에서 본 앱이 전체 보관함을 읽을 수 있는 권한은 부여되지 않습니다</li>
+      <li>결과 저장: 처리 결과를 보관함에 저장하기 위해 "사진 추가만" 권한을 요청합니다. 보관함의 다른 사진을 읽거나 수정하거나 삭제하지 않습니다</li>
+    </ul>
+
+    <h2>제3자 서비스, 광고 및 인앱 결제</h2>
+    <p>본 앱은 무료이며 광고와 인앱 결제가 없습니다. 광고 SDK, 분석 SDK 또는 제3자 추적 서비스를 포함하지 않으므로 앱 간 또는 사이트 간 데이터 추적이 존재하지 않으며, 광고 식별자 승인(iOS ATT / IDFA 또는 Android AD_ID 등)도 필요하지 않습니다.</p>
+
+    <h2>아동의 개인정보</h2>
+    <p>본 앱은 만 13세 미만 아동을 대상으로 하지 않으며, 어떠한 이용자로부터도 개인정보를 수집하지 않습니다.</p>
+
+    <h2>방침의 변경</h2>
+    <p>향후 본 개인정보 처리방침이 변경되는 경우, 앱 내에서 본 페이지를 갱신하며 별도로 개별 통지하지 않습니다.</p>
+
+    <h2>면책 조항</h2>
+    <p>본 앱은 로컬 사진 처리 도구이며, 생성된 증명사진은 참고용일 뿐입니다. 이용자는 처리하는 사진에 대한 적법한 권리를 보유하고 있는지 확인하고, 처리 결과가 관련 접수·등록·발급 기관의 구체적인 요건을 충족하는지 스스로 확인할 책임이 있습니다. 본 앱 사용으로 인해 발생하는 결과는 이용자 본인이 부담합니다(관련 법률이 허용하는 범위 내에서).</p>
+
+    <h2>문의하기</h2>
+    <p>본 개인정보 처리방침에 대해 질문, 의견 또는 제안이 있으시면 다음으로 연락해 주십시오: vissachafnaoui197@gmail.com</p>
+  </section>
+
+  <!-- ================= Русский ================= -->
+  <section data-lang="ru" lang="ru">
+    <h1>Политика конфиденциальности</h1>
+
+    <h2>Введение</h2>
+    <p>Добро пожаловать в ID Photo Maker — полностью локальный офлайн-инструмент для создания фотографий на документы. Он поддерживает удаление фона, свободное стирание, наложение костюмов, заливку фона, изменение размера и подготовку к печати. Мы серьёзно относимся к вашей конфиденциальности. В настоящей политике чётко объясняется, как это приложение обрабатывает (точнее, не обрабатывает) ваши данные.</p>
+
+    <h2>Сбор данных</h2>
+    <p>Это приложение не собирает, не хранит и не передаёт никакую личную информацию. Все функции работают исключительно на вашем устройстве и не требуют подключения к сети.</p>
+    <ul>
+      <li>Не собирается никакая личная идентифицирующая информация (имя, адрес электронной почты, номер телефона, местоположение и т. п.)</li>
+      <li>Не собираются рекламные идентификаторы устройства (отсутствуют IDFA, AAID / рекламный ID, IMEI и т. п.)</li>
+      <li>Не выполняются сетевые запросы, и данные не передаются ни на какой сервер</li>
+      <li>Не интегрированы сторонние SDK аналитики, отслеживания или рекламы</li>
+    </ul>
+
+    <h2>Обработка фотографий</h2>
+    <p>Выбранные вами фотографии читаются и обрабатываются только на вашем устройстве (включая удаление фона, стирание, наложение костюмов, заливку фона, изменение размера и подготовку к печати). Результаты сохраняются только в системную галерею. Мы никогда не получаем доступ к вашим фотографиям и результатам обработки, не загружаем, не храним и не передаём их третьим лицам.</p>
+
+    <h2>Разрешения на доступ к галерее</h2>
+    <p>Это приложение использует возможности галереи только в следующих двух случаях:</p>
+    <ul>
+      <li>Выбор фотографии: фотографии выбираются через системный выбор фото (PHPicker / Photo Picker), который не предоставляет приложению доступ ко всей галерее</li>
+      <li>Сохранение результатов: чтобы записать обработанный результат в галерею, приложение запрашивает разрешение «только добавление фотографий». Оно не читает, не изменяет и не удаляет другие фотографии в вашей галерее</li>
+    </ul>
+
+    <h2>Сторонние сервисы, реклама и покупки</h2>
+    <p>Это приложение бесплатное, без рекламы и без встроенных покупок. Оно не содержит рекламных SDK, SDK аналитики или сторонних сервисов отслеживания, поэтому межприложенческого и межсайтового отслеживания данных нет, и разрешение на использование рекламного идентификатора не требуется (например, iOS ATT / IDFA или Android AD_ID).</p>
+
+    <h2>Конфиденциальность детей</h2>
+    <p>Это приложение не предназначено для детей младше 13 лет и не собирает личную информацию ни от одного пользователя.</p>
+
+    <h2>Изменения в политике</h2>
+    <p>Если в будущем настоящая политика конфиденциальности изменится, мы обновим эту страницу в приложении без отдельного персонального уведомления.</p>
+
+    <h2>Отказ от ответственности</h2>
+    <p>Это приложение является локальным инструментом обработки фотографий; созданные фотографии на документы носят исключительно справочный характер. Вы обязаны убедиться в том, что обладаете законными правами на обрабатываемые фотографии, а также самостоятельно подтвердить, что результаты соответствуют конкретным требованиям соответствующего органа регистрации, зачисления или выдачи документов. Последствия, возникшие в результате вашего собственного использования приложения, вы несёте самостоятельно (в пределах, допускаемых применимым законодательством).</p>
+
+    <h2>Связаться с нами</h2>
+    <p>Если у вас есть вопросы, комментарии или предложения по поводу настоящей политики конфиденциальности, свяжитесь с нами: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= العربية (RTL) ================= -->
+  <section data-lang="ar" lang="ar" dir="rtl">
+    <h1>سياسة الخصوصية</h1>
+
+    <h2>مقدمة</h2>
+    <p>مرحبًا بك في ID Photo Maker، وهي أداة محلية بالكامل تعمل دون اتصال بالإنترنت لإنشاء صور الهوية. توفر إزالة الخلفية والمسح الحر وتركيب الملابس وملء الخلفية وضبط الحجم وتنسيق الطباعة. نحن نأخذ خصوصيتك على محمل الجد. توضح هذه السياسة بوضوح كيفية تعامل هذا التطبيق مع بياناتك (أو بالأحرى عدم تعامله معها).</p>
+
+    <h2>جمع البيانات</h2>
+    <p>لا يجمع هذا التطبيق أي معلومات شخصية ولا يخزّنها ولا يرفعها. تعمل جميع الوظائف بالكامل على جهازك ولا تتطلب اتصالاً بالشبكة.</p>
+    <ul>
+      <li>لا يتم جمع أي معلومات تعريف شخصية (مثل الاسم أو البريد الإلكتروني أو رقم الهاتف أو الموقع)</li>
+      <li>لا يتم جمع أي معرّفات إعلانية للجهاز (لا IDFA ولا AAID / المعرّف الإعلاني ولا IMEI وغيرها)</li>
+      <li>لا يتم إجراء أي طلبات شبكة ولا يتم رفع أي بيانات إلى أي خادم</li>
+      <li>لا يتم دمج أي أدوات تطوير إعلانية أو تحليلية أو خدمات تتبع تابعة لجهات خارجية</li>
+    </ul>
+
+    <h2>معالجة الصور</h2>
+    <p>تتم قراءة الصور التي تختارها ومعالجتها على جهازك فقط (بما في ذلك إزالة الخلفية والمسح وتركيب الملابس وملء الخلفية وضبط الحجم وتنسيق الطباعة). تُحفظ النتائج في مكتبة صور النظام فقط. لا نصل أبدًا إلى صورك أو نتائج المعالجة، ولا نرفعها ولا نخزّنها ولا نشاركها مع أي طرف ثالث.</p>
+
+    <h2>أذونات مكتبة الصور</h2>
+    <p>يستخدم هذا التطبيق إمكانات مكتبة الصور في الحالتين التاليتين فقط:</p>
+    <ul>
+      <li>اختيار صورة: يتم اختيار الصور عبر منتقي الصور في النظام (PHPicker / Photo Picker)، وهو لا يمنح هذا التطبيق حق قراءة مكتبة الصور بالكامل</li>
+      <li>حفظ النتائج: لكي يكتب التطبيق النتيجة المعالجة في مكتبتك، يطلب إذن «إضافة الصور فقط». ولا يقرأ أو يعدّل أو يحذف أي صور أخرى في مكتبتك</li>
+    </ul>
+
+    <h2>خدمات الجهات الخارجية والإعلانات والمشتريات</h2>
+    <p>هذا التطبيق مجاني وخالٍ من الإعلانات وخالٍ من عمليات الشراء داخل التطبيق. لا يدمج أي أدوات تطوير إعلانية أو تحليلية أو خدمات تتبع تابعة لجهات خارجية، لذلك لا يوجد تتبع بيانات بين التطبيقات أو المواقع، ولا يُشترط أي إذن لمعرّف الإعلان (مثل iOS ATT / IDFA أو Android AD_ID).</p>
+
+    <h2>خصوصية الأطفال</h2>
+    <p>هذا التطبيق غير موجّه للأطفال دون سن 13 عامًا، ولا يجمع معلومات شخصية من أي مستخدم.</p>
+
+    <h2>التغييرات في السياسة</h2>
+    <p>إذا تغيّرت سياسة الخصوصية هذه في المستقبل، فسنحدّث هذه الصفحة داخل التطبيق دون إشعار فردي إضافي.</p>
+
+    <h2>إخلاء المسؤولية</h2>
+    <p>هذا التطبيق أداة محلية لمعالجة الصور؛ وصور الهوية التي يتم إنشاؤها هي للإشارة العامة فقط. أنت مسؤول عن التأكد من امتلاكك الحقوق القانونية للصور التي تعالجها، وعن التحقق من أن النتائج تلبي المتطلبات المحددة لجهة التسجيل أو الالتحاق أو إصدار الوثائق المعنية. وتتحمل أنت عواقب استخدامك الخاص لهذا التطبيق (في الحدود التي يسمح بها القانون المعمول به).</p>
+
+    <h2>اتصل بنا</h2>
+    <p>إذا كانت لديك أي أسئلة أو تعليقات أو اقتراحات بشأن سياسة الخصوصية هذه، فيرجى الاتصال بنا على: vissachafnaoui197@gmail.com</p>
+  </section>
+
+  <!-- ================= हिन्दी ================= -->
+  <section data-lang="hi" lang="hi">
+    <h1>गोपनीयता नीति</h1>
+
+    <h2>परिचय</h2>
+    <p>ID Photo Maker में आपका स्वागत है, यह पूरी तरह से स्थानीय और ऑफ़लाइन आईडी फ़ोटो बनाने वाला टूल है। यह बैकग्राउंड हटाना, मुक्त मिटाना, सूट ओवरले, बैकग्राउंड भरना, आकार समायोजन और प्रिंट लेआउट प्रदान करता है। हम आपकी गोपनीयता को गंभीरता से लेते हैं। यह नीति स्पष्ट रूप से बताती है कि यह ऐप आपके डेटा को कैसे संभालता है (या अधिक सटीक रूप से, कैसे नहीं संभालता)।</p>
+
+    <h2>डेटा संग्रह</h2>
+    <p>यह ऐप कोई भी व्यक्तिगत जानकारी एकत्र, संग्रहीत या अपलोड नहीं करता है। सभी सुविधाएँ पूरी तरह से आपके डिवाइस पर चलती हैं और इनके लिए नेटवर्क कनेक्शन की आवश्यकता नहीं होती।</p>
+    <ul>
+      <li>कोई भी व्यक्तिगत पहचान संबंधी जानकारी एकत्र नहीं की जाती (जैसे नाम, ईमेल, फ़ोन नंबर या स्थान)</li>
+      <li>डिवाइस के किसी विज्ञापन पहचानकर्ता को एकत्र नहीं किया जाता (कोई IDFA, AAID / विज्ञापन ID, IMEI आदि नहीं)</li>
+      <li>कोई नेटवर्क अनुरोध नहीं किया जाता और किसी भी सर्वर पर कोई डेटा अपलोड नहीं किया जाता</li>
+      <li>किसी तृतीय-पक्ष एनालिटिक्स, ट्रैकिंग या विज्ञापन SDK को एकीकृत नहीं किया गया है</li>
+    </ul>
+
+    <h2>फ़ोटो प्रोसेसिंग</h2>
+    <p>आपके द्वारा चुनी गई फ़ोटो केवल आपके डिवाइस पर पढ़ी और संसाधित की जाती हैं (जिसमें बैकग्राउंड हटाना, मिटाना, सूट ओवरले, बैकग्राउंड भरना, आकार समायोजन और प्रिंट लेआउट शामिल हैं)। परिणाम केवल आपके सिस्टम फ़ोटो लाइब्रेरी में सहेजे जाते हैं। हम कभी भी आपकी फ़ोटो या संसाधित परिणामों तक पहुँच नहीं करते, उन्हें अपलोड, संग्रहीत या किसी तृतीय पक्ष के साथ साझा नहीं करते।</p>
+
+    <h2>फ़ोटो लाइब्रेरी अनुमतियाँ</h2>
+    <p>यह ऐप फ़ोटो लाइब्रेरी क्षमताओं का उपयोग केवल निम्नलिखित दो स्थितियों में करता है:</p>
+    <ul>
+      <li>फ़ोटो चुनना: फ़ोटो सिस्टम फ़ोटो चयनकर्ता (PHPicker / Photo Picker) के माध्यम से चुनी जाती हैं, जो इस ऐप को आपकी पूरी लाइब्रेरी पढ़ने की अनुमति नहीं देता</li>
+      <li>परिणाम सहेजना: संसाधित परिणाम को आपकी लाइब्रेरी में लिखने के लिए यह ऐप "केवल फ़ोटो जोड़ें" अनुमति का अनुरोध करता है। यह आपकी लाइब्रेरी की किसी अन्य फ़ोटो को नहीं पढ़ता, संशोधित या हटाता है</li>
+    </ul>
+
+    <h2>तृतीय-पक्ष सेवाएँ, विज्ञापन और खरीदारी</h2>
+    <p>यह ऐप निःशुल्क, विज्ञापन-रहित और इन-ऐप खरीदारी रहित है। यह किसी भी विज्ञापन SDK, एनालिटिक्स SDK या तृतीय-पक्ष ट्रैकिंग सेवा को एकीकृत नहीं करता, इसलिए ऐप-से-ऐप या साइट-से-साइट डेटा ट्रैकिंग नहीं होती और किसी विज्ञापन पहचानकर्ता प्राधिकरण (जैसे iOS ATT / IDFA या Android AD_ID) की आवश्यकता नहीं होती।</p>
+
+    <h2>बच्चों की गोपनीयता</h2>
+    <p>यह ऐप 13 वर्ष से कम आयु के बच्चों के लिए नहीं है और किसी भी उपयोगकर्ता से व्यक्तिगत जानकारी एकत्र नहीं करता।</p>
+
+    <h2>नीति में परिवर्तन</h2>
+    <p>यदि भविष्य में यह गोपनीयता नीति बदलती है, तो हम बिना किसी अलग व्यक्तिगत सूचना के ऐप के भीतर इस पृष्ठ को अपडेट कर देंगे।</p>
+
+    <h2>अस्वीकरण</h2>
+    <p>यह ऐप एक स्थानीय फ़ोटो प्रोसेसिंग टूल है; उत्पन्न आईडी फ़ोटो केवल सामान्य संदर्भ के लिए हैं। आप यह सुनिश्चित करने के लिए ज़िम्मेदार हैं कि आपके पास संसाधित की जाने वाली फ़ोटो पर कानूनी अधिकार हैं, और यह पुष्टि करने के लिए भी कि परिणाम संबंधित पंजीकरण, नामांकन या दस्तावेज़ जारी करने वाले प्राधिकरण की विशिष्ट आवश्यकताओं को पूरा करते हैं। इस ऐप के आपके अपने उपयोग से उत्पन्न परिणामों की ज़िम्मेदारी आपकी ही है (लागू कानून द्वारा अनुमत सीमा तक)।</p>
+
+    <h2>संपर्क करें</h2>
+    <p>यदि इस गोपनीयता नीति के बारे में आपके कोई प्रश्न, टिप्पणियाँ या सुझाव हैं, तो कृपया हमसे यहाँ संपर्क करें: vissachafnaoui197@gmail.com</p>
+  </section>
+
+  <!-- ================= Türkçe ================= -->
+  <section data-lang="tr" lang="tr">
+    <h1>Gizlilik Politikası</h1>
+
+    <h2>Giriş</h2>
+    <p>ID Photo Maker'a hoş geldiniz. Bu uygulama, tamamen yerel ve çevrimdışı çalışan bir vesikalık fotoğraf oluşturma aracıdır. Arka plan kaldırma, serbest silme, takım elbise giydirme, arka plan doldurma, boyut ayarlama ve baskı düzeni özelliklerini sunar. Gizliliğinize büyük önem veriyoruz. Bu politika, uygulamanın verilerinizi nasıl işlediğini (daha doğrusu nasıl işlemediğini) açıkça açıklar.</p>
+
+    <h2>Veri Toplama</h2>
+    <p>Bu uygulama hiçbir kişisel bilgiyi toplamaz, saklamaz veya yüklemez. Tüm işlevler tamamen cihazınızda çalışır ve ağ bağlantısı gerektirmez.</p>
+    <ul>
+      <li>Kişisel olarak tanımlanabilir hiçbir bilgi toplanmaz (ad, e-posta, telefon numarası, konum vb.)</li>
+      <li>Cihaz reklam tanımlayıcıları toplanmaz (IDFA, AAID / reklam kimliği, IMEI vb. yoktur)</li>
+      <li>Hiçbir ağ isteği yapılmaz ve hiçbir sunucuya veri yüklenmez</li>
+      <li>Üçüncü taraf analiz, izleme veya reklam SDK'ları entegre edilmemiştir</li>
+    </ul>
+
+    <h2>Fotoğraf İşleme</h2>
+    <p>Seçtiğiniz fotoğraflar yalnızca cihazınızda okunur ve işlenir (arka plan kaldırma, silme, takım elbise giydirme, arka plan doldurma, boyut ayarlama ve baskı düzeni dahil). Sonuçlar yalnızca sistem fotoğraf galerinize kaydedilir. Fotoğraflarınıza veya işlenmiş sonuçlarınıza asla erişmeyiz; bunları yüklemeyiz, saklamayız ve üçüncü taraflarla paylaşmayız.</p>
+
+    <h2>Fotoğraf Galerisi İzinleri</h2>
+    <p>Bu uygulama fotoğraf galerisi özelliklerini yalnızca aşağıdaki iki durumda kullanır:</p>
+    <ul>
+      <li>Fotoğraf seçme: fotoğraflar sistem fotoğraf seçici (PHPicker / Photo Picker) aracılığıyla seçilir; bu, uygulamaya tüm galerinizi okuma erişimi vermez</li>
+      <li>Sonuçları kaydetme: işlenmiş sonucu galerinize yazmak için bu uygulama "yalnızca fotoğraf ekle" iznini ister. Galerinizdeki diğer fotoğrafları okumaz, değiştirmez veya silmez</li>
+    </ul>
+
+    <h2>Üçüncü Taraf Hizmetler, Reklamlar ve Satın Alımlar</h2>
+    <p>Bu uygulama ücretsizdir, reklamsızdır ve uygulama içi satın alma içermez. Hiçbir reklam SDK'sı, analiz SDK'sı veya üçüncü taraf izleme hizmeti entegre etmez; bu nedenle uygulamalar veya siteler arası veri izleme yoktur ve hiçbir reklam tanımlayıcısı yetkilendirmesi gerekmez (iOS ATT / IDFA veya Android AD_ID gibi).</p>
+
+    <h2>Çocukların Gizliliği</h2>
+    <p>Bu uygulama 13 yaşından küçük çocuklara yönelik değildir ve hiçbir kullanıcıdan kişisel bilgi toplamaz.</p>
+
+    <h2>Politikadaki Değişiklikler</h2>
+    <p>Bu gizlilik politikası gelecekte değişirse, ayrıca bireysel bildirim yapmaksızın uygulama içinde bu sayfayı güncelleyeceğiz.</p>
+
+    <h2>Sorumluluk Reddi</h2>
+    <p>Bu uygulama yerel bir fotoğraf işleme aracıdır; oluşturulan vesikalık fotoğraflar yalnızca genel referans amaçlıdır. İşlediğiniz fotoğraflar üzerinde yasal haklara sahip olduğunuzdan emin olmak ve sonuçların ilgili kayıt, başvuru veya belge düzenleme kurumunun özel gereksinimlerini karşıladığını doğrulamak sizin sorumluluğunuzdadır. Bu uygulamayı kendi kullanımınızdan doğan sonuçları siz üstlenirsiniz (yürürlükteki yasaların izin verdiği ölçüde).</p>
+
+    <h2>Bize Ulaşın</h2>
+    <p>Bu gizlilik politikasıyla ilgili sorularınız, yorumlarınız veya önerileriniz varsa lütfen bizimle şu adresten iletişime geçin: vissachafnaoui197@gmail.com</p>
+  </section>
+
+  <!-- ================= Bahasa Indonesia ================= -->
+  <section data-lang="id" lang="id">
+    <h1>Kebijakan Privasi</h1>
+
+    <h2>Pendahuluan</h2>
+    <p>Selamat datang di ID Photo Maker, alat pembuat foto identitas yang sepenuhnya lokal dan offline. Aplikasi ini menyediakan penghapusan latar belakang, penghapusan bebas, penempatan jas, pengisian latar belakang, penyesuaian ukuran, dan tata letak cetak. Kami sangat serius menangani privasi Anda. Kebijakan ini menjelaskan secara jelas bagaimana aplikasi ini menangani (atau lebih tepatnya, tidak menangani) data Anda.</p>
+
+    <h2>Pengumpulan Data</h2>
+    <p>Aplikasi ini tidak mengumpulkan, menyimpan, atau mengunggah informasi pribadi apa pun. Semua fitur berjalan sepenuhnya di perangkat Anda dan tidak memerlukan koneksi jaringan.</p>
+    <ul>
+      <li>Tidak ada informasi identitas pribadi yang dikumpulkan (seperti nama, email, nomor telepon, atau lokasi)</li>
+      <li>Tidak ada pengenal iklan perangkat yang dikumpulkan (tidak ada IDFA, AAID / ID iklan, IMEI, dan sebagainya)</li>
+      <li>Tidak ada permintaan jaringan yang dilakukan dan tidak ada data yang diunggah ke server mana pun</li>
+      <li>Tidak ada SDK analitik, pelacakan, atau iklan pihak ketiga yang diintegrasikan</li>
+    </ul>
+
+    <h2>Pemrosesan Foto</h2>
+    <p>Foto yang Anda pilih hanya dibaca dan diproses di perangkat Anda (termasuk penghapusan latar belakang, penghapusan, penempatan jas, pengisian latar belakang, penyesuaian ukuran, dan tata letak cetak). Hasilnya hanya disimpan ke galeri foto sistem Anda. Kami tidak pernah mengakses, mengunggah, menyimpan, atau membagikan foto maupun hasil pemrosesan Anda kepada pihak ketiga mana pun.</p>
+
+    <h2>Izin Galeri Foto</h2>
+    <p>Aplikasi ini menggunakan kemampuan galeri foto hanya dalam dua situasi berikut:</p>
+    <ul>
+      <li>Memilih foto: foto dipilih melalui pemilih foto sistem (PHPicker / Photo Picker), yang tidak memberikan akses kepada aplikasi ini untuk membaca seluruh galeri Anda</li>
+      <li>Menyimpan hasil: untuk menulis hasil pemrosesan ke galeri Anda, aplikasi ini meminta izin "hanya menambahkan foto". Aplikasi tidak membaca, mengubah, atau menghapus foto lain di galeri Anda</li>
+    </ul>
+
+    <h2>Layanan Pihak Ketiga, Iklan, dan Pembelian</h2>
+    <p>Aplikasi ini gratis, tanpa iklan, dan tanpa pembelian dalam aplikasi. Aplikasi tidak mengintegrasikan SDK iklan, SDK analitik, atau layanan pelacakan pihak ketiga, sehingga tidak ada pelacakan data antar aplikasi maupun antar situs, dan tidak diperlukan otorisasi pengenal iklan apa pun (seperti iOS ATT / IDFA atau Android AD_ID).</p>
+
+    <h2>Privasi Anak</h2>
+    <p>Aplikasi ini tidak ditujukan untuk anak di bawah usia 13 tahun dan tidak mengumpulkan informasi pribadi dari pengguna mana pun.</p>
+
+    <h2>Perubahan Kebijakan</h2>
+    <p>Jika kebijakan privasi ini berubah di masa mendatang, kami akan memperbarui halaman ini di dalam aplikasi tanpa pemberitahuan individual lebih lanjut.</p>
+
+    <h2>Penafian</h2>
+    <p>Aplikasi ini adalah alat pemrosesan foto lokal; foto identitas yang dihasilkan hanya untuk referensi umum. Anda bertanggung jawab untuk memastikan bahwa Anda memiliki hak hukum atas foto yang Anda proses dan untuk memastikan bahwa hasilnya memenuhi persyaratan khusus dari otoritas pendaftaran, penerimaan, atau penerbitan dokumen yang bersangkutan. Anda menanggung konsekuensi yang timbul dari penggunaan aplikasi ini oleh Anda sendiri (sejauh diizinkan oleh hukum yang berlaku).</p>
+
+    <h2>Hubungi Kami</h2>
+    <p>Jika Anda memiliki pertanyaan, komentar, atau saran tentang kebijakan privasi ini, silakan hubungi kami di: vissachafnaoui197@gmail.com</p>
+  </section>
+
+  <script>
+    (function () {
+      // 14 种语言：与 lib/data/storage/locale_controller.dart 的 kSupportedLanguages 一致
+      var LANGS = {
+        zh: { title: '隐私政策 - ID Photo Maker',           copy: '复制当前语言全文',       copied: '已复制 ✓' },
+        // 繁体中文（台湾用语），文案与 assets/legal/privacy_zh_Hant.json 逐字一致
+        "zh-hant": { title: '隱私權政策 - ID Photo Maker', copy: '複製目前語言全文', copied: '已複製 ✓' },
+        en: { title: 'Privacy Policy - ID Photo Maker',     copy: 'Copy full text',          copied: 'Copied ✓' },
+        es: { title: 'Política de Privacidad - ID Photo Maker', copy: 'Copiar texto completo', copied: 'Copiado ✓' },
+        fr: { title: 'Politique de Confidentialité - ID Photo Maker', copy: 'Copier tout le texte', copied: 'Copié ✓' },
+        de: { title: 'Datenschutzerklärung - ID Photo Maker', copy: 'Vollständigen Text kopieren', copied: 'Kopiert ✓' },
+        pt: { title: 'Política de Privacidade - ID Photo Maker', copy: 'Copiar texto completo', copied: 'Copiado ✓' },
+        it: { title: 'Informativa sulla Privacy - ID Photo Maker', copy: 'Copia tutto il testo', copied: 'Copiato ✓' },
+        ja: { title: 'プライバシーポリシー - ID Photo Maker', copy: '全文をコピー',          copied: 'コピーしました ✓' },
+        ko: { title: '개인정보 처리방침 - ID Photo Maker',    copy: '전체 텍스트 복사',        copied: '복사됨 ✓' },
+        ru: { title: 'Политика конфиденциальности - ID Photo Maker', copy: 'Скопировать весь текст', copied: 'Скопировано ✓' },
+        ar: { title: 'سياسة الخصوصية - ID Photo Maker',      copy: 'نسخ النص بالكامل',        copied: 'تم النسخ ✓' },
+        hi: { title: 'गोपनीयता नीति - ID Photo Maker',        copy: 'पूरा टेक्स्ट कॉपी करें',   copied: 'कॉपी हो गया ✓' },
+        tr: { title: 'Gizlilik Politikası - ID Photo Maker', copy: 'Tüm metni kopyala',       copied: 'Kopyalandı ✓' },
+        id: { title: 'Kebijakan Privasi - ID Photo Maker',   copy: 'Salin seluruh teks',      copied: 'Tersalin ✓' }
+      };
+
+      var select = document.getElementById('langSelect');
+      var sections = document.querySelectorAll('section[data-lang]');
+      var copyBtn = document.getElementById('copyBtn');
+      var copyTimer = null;
+
+      function currentLang() {
+        var active = document.querySelector('section[data-lang].active');
+        return active ? active.getAttribute('data-lang') : 'en';
+      }
+
+      function setLang(lang) {
+        if (!LANGS[lang]) lang = 'en';
+
+        sections.forEach(function (s) {
+          s.classList.toggle('active', s.getAttribute('data-lang') === lang);
+        });
+        select.value = lang;
+        document.documentElement.setAttribute('lang', lang);
+        document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+        document.title = LANGS[lang].title;
+        copyBtn.textContent = LANGS[lang].copy;
+
+        // 同步到 URL（本地 file:// 打开时浏览器可能禁止，忽略异常即可）
+        try {
+          if (history.replaceState) history.replaceState(null, '', '#' + lang);
+        } catch (e) {}
+      }
+
+      select.addEventListener('change', function () {
+        setLang(select.value);
+        window.scrollTo(0, 0);
+      });
+
+      function fallbackCopy(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.top = '-1000px';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+
+      function flashCopied() {
+        var lang = currentLang();
+        if (copyTimer) clearTimeout(copyTimer);
+        copyBtn.textContent = LANGS[lang].copied;
+        copyTimer = setTimeout(function () {
+          copyBtn.textContent = LANGS[lang].copy;
+        }, 1600);
+      }
+
+      copyBtn.addEventListener('click', function () {
+        var lang = currentLang();
+        var sec = document.querySelector('section[data-lang="' + lang + '"]');
+        if (!sec) return;
+
+        // 按块提取纯文本，标题前留空行，列表项加 "- " 前缀
+        var blocks = sec.querySelectorAll('h1, h2, p, li');
+        var lines = [];
+        blocks.forEach(function (el) {
+          var text = el.textContent.replace(/\s+/g, ' ').trim();
+          if (!text) return;
+          if (el.tagName === 'H1' || el.tagName === 'H2') {
+            if (lines.length) lines.push('');
+            lines.push(text);
+          } else if (el.tagName === 'LI') {
+            lines.push('- ' + text);
+          } else {
+            lines.push(text);
+          }
+        });
+
+        var plain = lines.join('\n');
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(plain).then(flashCopied, function () {
+            fallbackCopy(plain);
+            flashCopied();
+          });
+        } else {
+          fallbackCopy(plain);
+          flashCopied();
+        }
+      });
+
+      // 初始化：URL hash → 浏览器语言（zh-TW / zh-HK / zh-MO 走繁体）→ 英文
+      var hash = (location.hash || '').replace('#', '').toLowerCase();
+      var nav = (navigator.language || 'en').toLowerCase();
+      var navCode = nav.split('-')[0];
+      if (navCode === 'zh' && /-(tw|hk|mo)/.test(nav)) navCode = 'zh-hant';
+      setLang(LANGS[hash] ? hash : (LANGS[navCode] ? navCode : 'en'));
+    })();
+  </script>
+</body>
+</html>

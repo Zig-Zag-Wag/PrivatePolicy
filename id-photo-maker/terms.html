@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - ID Photo Maker</title>
+  <style>
+    body {
+      font-family: -apple-system, "Segoe UI", "Noto Sans", "Noto Sans Arabic", "Noto Sans Devanagari",
+                   "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Malgun Gothic", sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 16px 40px;
+      line-height: 1.7;
+      color: #1a1c1e;
+      background: #fff;
+    }
+    h1 { font-size: 22px; }
+    h2 { font-size: 17px; margin-top: 24px; }
+    p, li { font-size: 15px; color: #333; }
+    ul { padding-left: 22px; }
+
+    /* 语言切换栏 */
+    .lang-bar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 0;
+      margin-bottom: 8px;
+      background: #fff;
+      border-bottom: 1px solid #e6e8ea;
+    }
+    .lang-select {
+      appearance: none;
+      -webkit-appearance: none;
+      border: 1px solid #d5d9dd;
+      background: #f6f7f8 url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%23555' d='M1 1l5 5 5-5'/%3E%3C/svg%3E") no-repeat right 12px center;
+      color: #1a1c1e;
+      font-size: 14px;
+      font-family: inherit;
+      padding: 7px 34px 7px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      max-width: 60vw;
+    }
+    .lang-select:focus { outline: 2px solid #1a73e8; outline-offset: 1px; }
+    .copy-btn {
+      margin-left: auto;
+      appearance: none;
+      border: 1px solid #d5d9dd;
+      background: #fff;
+      color: #1a1c1e;
+      font-size: 13px;
+      font-family: inherit;
+      padding: 7px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .copy-btn:hover { background: #f2f4f6; }
+
+    section[data-lang] { display: none; }
+    section[data-lang].active { display: block; }
+
+    @media print {
+      .lang-bar { display: none !important; }
+      section[data-lang] { display: none !important; }
+      section[data-lang].active { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lang-bar">
+    <select class="lang-select" id="langSelect" aria-label="Language">
+      <option value="zh">中文</option>
+      <option value="zh-hant">繁體中文</option>
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+      <option value="pt">Português</option>
+      <option value="it">Italiano</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+      <option value="ru">Русский</option>
+      <option value="ar">العربية</option>
+      <option value="hi">हिन्दी</option>
+      <option value="tr">Türkçe</option>
+      <option value="id">Bahasa Indonesia</option>
+    </select>
+    <button class="copy-btn" type="button" id="copyBtn">复制当前语言全文</button>
+  </div>
+
+  <!-- ================= 简体中文 ================= -->
+  <section data-lang="zh" lang="zh-CN">
+    <h1>用户协议</h1>
+
+    <h2>服务说明</h2>
+    <p>证件照制作（ID Photo Maker）是一款纯本地、离线的证件照制作工具，提供去除背景、自由擦除、西装贴图、填充背景、尺寸调整与打印排版等功能，并将结果保存到您的系统相册。全部功能免费、无广告、无内购。</p>
+
+    <h2>使用规则</h2>
+    <p>您在使用本应用处理照片时，应确保拥有所处理照片的合法权利，且处理用途不违反法律法规或损害第三方合法权益。</p>
+    <ul>
+      <li>照片处理全程在您的设备本地完成，本应用不上传、不存储、不分享您的照片</li>
+      <li>请勿使用本应用制作、传播违法违规或侵犯他人权益的内容</li>
+    </ul>
+
+    <h2>贴图素材</h2>
+    <p>本应用内置的西装等贴图素材仅供在本应用内用于照片合成，请勿将其用于其他用途或再分发。</p>
+
+    <h2>知识产权</h2>
+    <p>本应用的软件、界面及相关权利归开发者所有。您被授予一项非独占、不可转让的有限使用许可，仅用于本应用提供的功能。</p>
+
+    <h2>免责声明</h2>
+    <p>本应用按「现状」提供，不作出任何明示或默示的保证。生成的证件照仅作一般参考，用户须自行确认其符合相关报名、登记或证件机构的要求。因照片内容、处理结果、设备兼容性或相册权限等原因导致的任何损失，开发者在适用法律允许的范围内不承担责任。</p>
+
+    <h2>协议变更与终止</h2>
+    <p>我们可能适时更新本协议，更新后将在应用内展示。若您不同意更新后的条款，可停止使用本应用。</p>
+
+    <h2>联系我们</h2>
+    <p>如对本协议有任何疑问，请通过以下方式联系我们：vissachafnaoui197@gmail.com。</p>
+  </section>
+
+  <section data-lang="zh-hant" lang="zh-Hant">
+    <h1>使用者條款</h1>
+
+    <h2>服務說明</h2>
+    <p>證件照製作（ID Photo Maker）是一款純本機、離線的證件照製作工具，提供去背、自由擦除、西裝貼圖、填滿背景、尺寸調整與列印排版等功能，並將結果儲存至您的系統相簿。全部功能免費、無廣告、無內購。</p>
+
+    <h2>使用規則</h2>
+    <p>您在使用本應用程式處理照片時，應確保擁有所處理照片的合法權利，且處理用途不違反法律法規或損害第三方合法權益。</p>
+    <ul>
+      <li>照片處理全程在您的裝置本機完成，本應用程式不上傳、不儲存、不分享您的照片</li>
+      <li>請勿使用本應用程式製作、散布違法違規或侵害他人權益的內容</li>
+    </ul>
+
+    <h2>貼圖素材</h2>
+    <p>本應用程式內建的西裝等貼圖素材僅供在本應用程式內用於照片合成，請勿將其用於其他用途或再散布。</p>
+
+    <h2>智慧財產權</h2>
+    <p>本應用程式的軟體、介面及相關權利均歸開發者所有。您被授予一項非專屬、不可轉讓的有限使用授權，僅用於本應用程式提供的功能。</p>
+
+    <h2>免責聲明</h2>
+    <p>本應用程式依「現狀」提供，不作出任何明示或默示的保證。產生的證件照僅供一般參考，使用者須自行確認其符合相關報名、登記或證件機構的要求。因照片內容、處理結果、裝置相容性或相簿權限等原因所導致的任何損失，開發者在適用法律允許的範圍內不承擔責任。</p>
+
+    <h2>條款變更與終止</h2>
+    <p>我們可能適時更新本條款，更新後將在應用程式內顯示。若您不同意更新後的條款，可停止使用本應用程式。</p>
+
+    <h2>聯絡我們</h2>
+    <p>如對本條款有任何疑問，請透過以下方式與我們聯絡：vissachafnaoui197@gmail.com。</p>
+  </section>
+
+  <!-- ================= English ================= -->
+  <section data-lang="en" lang="en">
+    <h1>Terms of Service</h1>
+
+    <h2>Service Description</h2>
+    <p>ID Photo Maker is a purely local, offline ID-photo creation tool. It provides background removal, free erasing, suit overlays, background filling, size adjustment, and print layout, and saves the result to your system photo library. All features are free, ad-free, and have no in-app purchases.</p>
+
+    <h2>Usage Rules</h2>
+    <p>When processing photos with this app, you must ensure you have the legal rights to the photos being processed, and that your use does not violate laws, regulations, or the legitimate rights of third parties.</p>
+    <ul>
+      <li>Photo processing is done entirely on your device; this app does not upload, store, or share your photos</li>
+      <li>Do not use this app to create or distribute content that is illegal or infringes on the rights of others</li>
+    </ul>
+
+    <h2>Overlay Assets</h2>
+    <p>The bundled suit and other overlay assets are provided solely for photo compositing within this app; do not use or redistribute them for other purposes.</p>
+
+    <h2>Intellectual Property</h2>
+    <p>The software, interface, and related rights of this app belong to the developer. You are granted a non-exclusive, non-transferable, limited license solely for the features provided by this app.</p>
+
+    <h2>Disclaimer</h2>
+    <p>This app is provided on an "as is" basis without any express or implied warranties. The generated ID photos are for general reference only; you must confirm that they meet the requirements of the relevant registration, enrollment, or ID-issuing authority. The developer shall not be liable, to the extent permitted by applicable law, for any loss arising from photo content, processing results, device compatibility, or photo library permissions.</p>
+
+    <h2>Changes and Termination</h2>
+    <p>We may update these terms from time to time, and the updated terms will be shown within the app. If you do not agree with the updated terms, you may stop using this app.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions about these terms, please contact us at: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= Español ================= -->
+  <section data-lang="es" lang="es">
+    <h1>Términos de Servicio</h1>
+
+    <h2>Descripción del servicio</h2>
+    <p>ID Photo Maker es una herramienta de creación de fotos de carné totalmente local y sin conexión. Ofrece eliminación de fondo, borrado libre, superposición de trajes, relleno de fondo, ajuste de tamaño y composición para impresión, y guarda el resultado en la galería de fotos de tu sistema. Todas las funciones son gratuitas, sin anuncios y sin compras integradas.</p>
+
+    <h2>Normas de uso</h2>
+    <p>Al procesar fotos con esta aplicación, debes asegurarte de tener los derechos legales sobre las fotos que procesas y de que su uso no infrinja leyes, reglamentos ni los derechos legítimos de terceros.</p>
+    <ul>
+      <li>El procesamiento de fotos se realiza íntegramente en tu dispositivo; esta aplicación no sube, almacena ni comparte tus fotos</li>
+      <li>No utilices esta aplicación para crear o difundir contenido ilegal o que vulnere los derechos de terceros</li>
+    </ul>
+
+    <h2>Recursos de superposición</h2>
+    <p>Los recursos de superposición incluidos (como los trajes) se ofrecen únicamente para la composición de fotos dentro de esta aplicación; no los utilices para otros fines ni los redistribuyas.</p>
+
+    <h2>Propiedad intelectual</h2>
+    <p>El software, la interfaz y los derechos relacionados de esta aplicación pertenecen al desarrollador. Se te concede una licencia limitada, no exclusiva e intransferible, únicamente para las funciones que ofrece esta aplicación.</p>
+
+    <h2>Aviso legal</h2>
+    <p>Esta aplicación se proporciona «tal cual», sin garantías expresas ni implícitas de ningún tipo. Las fotos de carné generadas son solo de referencia general; el usuario debe confirmar por sí mismo que cumplen los requisitos de la autoridad de registro, matriculación o expedición de documentos correspondiente. El desarrollador no será responsable, en la medida permitida por la ley aplicable, de ninguna pérdida derivada del contenido de las fotos, los resultados del procesamiento, la compatibilidad del dispositivo o los permisos de la galería.</p>
+
+    <h2>Cambios y terminación</h2>
+    <p>Podemos actualizar estos términos periódicamente y los términos actualizados se mostrarán dentro de la aplicación. Si no estás de acuerdo con los términos actualizados, puedes dejar de usar esta aplicación.</p>
+
+    <h2>Contacto</h2>
+    <p>Si tienes alguna pregunta sobre estos términos, ponte en contacto con nosotros en: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= Français ================= -->
+  <section data-lang="fr" lang="fr">
+    <h1>Conditions d'Utilisation</h1>
+
+    <h2>Description du service</h2>
+    <p>ID Photo Maker est un outil de création de photos d'identité entièrement local et hors ligne. Il propose la suppression d'arrière-plan, l'effacement libre, la superposition de tenues, le remplissage d'arrière-plan, le réglage de la taille et la mise en page pour l'impression, et enregistre le résultat dans la galerie de photos de votre système. Toutes les fonctionnalités sont gratuites, sans publicité et sans achats intégrés.</p>
+
+    <h2>Règles d'utilisation</h2>
+    <p>Lorsque vous traitez des photos avec cette application, vous devez vous assurer que vous disposez des droits légaux sur les photos traitées et que votre usage ne viole ni la loi, ni la réglementation, ni les droits légitimes de tiers.</p>
+    <ul>
+      <li>Le traitement des photos s'effectue entièrement sur votre appareil ; cette application ne téléverse, ne stocke et ne partage pas vos photos</li>
+      <li>N'utilisez pas cette application pour créer ou diffuser des contenus illégaux ou portant atteinte aux droits d'autrui</li>
+    </ul>
+
+    <h2>Ressources de superposition</h2>
+    <p>Les ressources de superposition intégrées (notamment les tenues) sont fournies uniquement pour la composition de photos au sein de cette application ; ne les utilisez pas à d'autres fins et ne les redistribuez pas.</p>
+
+    <h2>Propriété intellectuelle</h2>
+    <p>Le logiciel, l'interface et les droits associés de cette application appartiennent au développeur. Une licence limitée, non exclusive et non transférable vous est accordée, uniquement pour les fonctionnalités proposées par cette application.</p>
+
+    <h2>Avis de non-responsabilité</h2>
+    <p>Cette application est fournie « en l'état », sans garantie expresse ou implicite d'aucune sorte. Les photos d'identité générées ne sont fournies qu'à titre indicatif ; il vous appartient de confirmer qu'elles satisfont aux exigences de l'autorité d'inscription, d'immatriculation ou de délivrance de documents concernée. Le développeur ne saurait être tenu responsable, dans la mesure permise par la loi applicable, de toute perte résultant du contenu des photos, des résultats du traitement, de la compatibilité de l'appareil ou des autorisations d'accès à la galerie.</p>
+
+    <h2>Modifications et résiliation</h2>
+    <p>Nous pouvons mettre à jour ces conditions de temps à autre ; les conditions mises à jour seront affichées dans l'application. Si vous n'acceptez pas les conditions mises à jour, vous pouvez cesser d'utiliser cette application.</p>
+
+    <h2>Nous contacter</h2>
+    <p>Si vous avez des questions concernant ces conditions, veuillez nous contacter à l'adresse : vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= Deutsch ================= -->
+  <section data-lang="de" lang="de">
+    <h1>Nutzungsbedingungen</h1>
+
+    <h2>Leistungsbeschreibung</h2>
+    <p>ID Photo Maker ist ein vollständig lokales Offline-Tool zur Erstellung von Passfotos. Es bietet Hintergrundentfernung, freies Radieren, Anziehen von Anzügen, Hintergrundfüllung, Größenanpassung und Drucklayout und speichert das Ergebnis in der Fotogalerie Ihres Systems. Alle Funktionen sind kostenlos, werbefrei und ohne In-App-Käufe.</p>
+
+    <h2>Nutzungsregeln</h2>
+    <p>Wenn Sie mit dieser App Fotos verarbeiten, müssen Sie sicherstellen, dass Sie die erforderlichen Rechte an den verarbeiteten Fotos besitzen und dass Ihre Nutzung weder gegen Gesetze und Vorschriften noch gegen die berechtigten Interessen Dritter verstößt.</p>
+    <ul>
+      <li>Die Fotoverarbeitung erfolgt vollständig auf Ihrem Gerät; diese App lädt Ihre Fotos nicht hoch, speichert sie nicht und gibt sie nicht weiter</li>
+      <li>Verwenden Sie diese App nicht, um rechtswidrige Inhalte oder Inhalte, die Rechte anderer verletzen, zu erstellen oder zu verbreiten</li>
+    </ul>
+
+    <h2>Overlay-Materialien</h2>
+    <p>Die mitgelieferten Overlay-Materialien (z. B. Anzüge) dienen ausschließlich der Fotokomposition innerhalb dieser App; verwenden Sie sie nicht für andere Zwecke und geben Sie sie nicht weiter.</p>
+
+    <h2>Geistiges Eigentum</h2>
+    <p>Die Software, die Benutzeroberfläche und die damit verbundenen Rechte dieser App gehören dem Entwickler. Ihnen wird eine beschränkte, nicht ausschließliche und nicht übertragbare Lizenz ausschließlich für die von dieser App bereitgestellten Funktionen erteilt.</p>
+
+    <h2>Haftungsausschluss</h2>
+    <p>Diese App wird „wie besehen“ ohne ausdrückliche oder stillschweigende Gewährleistung jeglicher Art bereitgestellt. Die erzeugten Passfotos dienen nur als allgemeine Orientierung; der Nutzer muss selbst bestätigen, dass sie den Anforderungen der zuständigen Anmelde-, Einschreibungs- oder Ausstellungsbehörde entsprechen. Der Entwickler haftet, soweit gesetzlich zulässig, nicht für Verluste, die aus Fotoinhalten, Verarbeitungsergebnissen, Gerätekompatibilität oder Galerieberechtigungen entstehen.</p>
+
+    <h2>Änderungen und Kündigung</h2>
+    <p>Wir können diese Bedingungen von Zeit zu Zeit aktualisieren; die aktualisierten Bedingungen werden in der App angezeigt. Wenn Sie mit den aktualisierten Bedingungen nicht einverstanden sind, können Sie die Nutzung dieser App beenden.</p>
+
+    <h2>Kontakt</h2>
+    <p>Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= Português ================= -->
+  <section data-lang="pt" lang="pt">
+    <h1>Termos de Serviço</h1>
+
+    <h2>Descrição do serviço</h2>
+    <p>O ID Photo Maker é uma ferramenta totalmente local e offline de criação de fotos de documento. Ele oferece remoção de fundo, apagamento livre, sobreposição de trajes, preenchimento de fundo, ajuste de tamanho e layout para impressão, e salva o resultado na galeria de fotos do seu sistema. Todas as funcionalidades são gratuitas, sem anúncios e sem compras no aplicativo.</p>
+
+    <h2>Regras de uso</h2>
+    <p>Ao processar fotos com este aplicativo, você deve garantir que possui os direitos legais sobre as fotos processadas e que o uso não viola leis, regulamentos ou os direitos legítimos de terceiros.</p>
+    <ul>
+      <li>O processamento das fotos é feito inteiramente no seu dispositivo; este aplicativo não envia, armazena nem compartilha suas fotos</li>
+      <li>Não use este aplicativo para criar ou divulgar conteúdo ilegal ou que viole os direitos de terceiros</li>
+    </ul>
+
+    <h2>Recursos de sobreposição</h2>
+    <p>Os recursos de sobreposição incluídos (como os trajes) são fornecidos exclusivamente para a composição de fotos dentro deste aplicativo; não os utilize para outras finalidades nem os redistribua.</p>
+
+    <h2>Propriedade intelectual</h2>
+    <p>O software, a interface e os direitos relacionados deste aplicativo pertencem ao desenvolvedor. É concedida a você uma licença limitada, não exclusiva e intransferível, exclusivamente para as funcionalidades oferecidas por este aplicativo.</p>
+
+    <h2>Isenção de responsabilidade</h2>
+    <p>Este aplicativo é fornecido «no estado em que se encontra», sem garantias expressas ou implícitas de qualquer tipo. As fotos de documento geradas servem apenas como referência geral; o usuário deve confirmar por conta própria que elas atendem aos requisitos da autoridade competente de inscrição, matrícula ou emissão de documentos. O desenvolvedor não se responsabiliza, na medida permitida pela lei aplicável, por qualquer perda decorrente do conteúdo das fotos, dos resultados do processamento, da compatibilidade do dispositivo ou das permissões da galeria.</p>
+
+    <h2>Alterações e rescisão</h2>
+    <p>Podemos atualizar estes termos periodicamente, e os termos atualizados serão exibidos dentro do aplicativo. Se você não concordar com os termos atualizados, poderá deixar de usar este aplicativo.</p>
+
+    <h2>Fale conosco</h2>
+    <p>Se você tiver dúvidas sobre estes termos, entre em contato conosco em: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= Italiano ================= -->
+  <section data-lang="it" lang="it">
+    <h1>Termini di Servizio</h1>
+
+    <h2>Descrizione del servizio</h2>
+    <p>ID Photo Maker è uno strumento per creare foto tessera completamente locale e offline. Offre rimozione dello sfondo, cancellazione libera, sovrapposizione di abiti, riempimento dello sfondo, regolazione delle dimensioni e impaginazione per la stampa, e salva il risultato nella galleria foto del sistema. Tutte le funzionalità sono gratuite, senza pubblicità e senza acquisti in-app.</p>
+
+    <h2>Regole d'uso</h2>
+    <p>Quando elabori foto con questa app, devi assicurarti di avere i diritti legali sulle foto elaborate e che il tuo utilizzo non violi leggi, regolamenti o i diritti legittimi di terzi.</p>
+    <ul>
+      <li>L'elaborazione delle foto avviene interamente sul tuo dispositivo; questa app non carica, non memorizza e non condivide le tue foto</li>
+      <li>Non utilizzare questa app per creare o diffondere contenuti illegali o che violino i diritti altrui</li>
+    </ul>
+
+    <h2>Risorse di sovrapposizione</h2>
+    <p>Le risorse di sovrapposizione incluse (ad esempio gli abiti) sono fornite esclusivamente per la composizione di foto all'interno di questa app; non utilizzarle per altri scopi e non ridistribuirle.</p>
+
+    <h2>Proprietà intellettuale</h2>
+    <p>Il software, l'interfaccia e i diritti correlati di questa app appartengono allo sviluppatore. Ti viene concessa una licenza limitata, non esclusiva e non trasferibile, esclusivamente per le funzionalità offerte da questa app.</p>
+
+    <h2>Esclusione di responsabilità</h2>
+    <p>Questa app viene fornita «così com'è», senza garanzie espresse o implicite di alcun tipo. Le foto tessera generate sono solo a scopo di riferimento generale; l'utente deve verificare autonomamente che soddisfino i requisiti dell'autorità competente per l'iscrizione, l'immatricolazione o il rilascio dei documenti. Lo sviluppatore non è responsabile, nella misura consentita dalla legge applicabile, di eventuali perdite derivanti dal contenuto delle foto, dai risultati dell'elaborazione, dalla compatibilità del dispositivo o dalle autorizzazioni della galleria.</p>
+
+    <h2>Modifiche e cessazione</h2>
+    <p>Possiamo aggiornare questi termini di tanto in tanto; i termini aggiornati saranno mostrati all'interno dell'app. Se non sei d'accordo con i termini aggiornati, puoi smettere di utilizzare questa app.</p>
+
+    <h2>Contattaci</h2>
+    <p>Se hai domande su questi termini, contattaci all'indirizzo: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= 日本語 ================= -->
+  <section data-lang="ja" lang="ja">
+    <h1>利用規約</h1>
+
+    <h2>サービスの説明</h2>
+    <p>「ID Photo Maker（証明写真メーカー）」は、完全にローカルで動作するオフラインの証明写真作成ツールです。背景の削除、自由消去、スーツの重ね合わせ、背景の塗りつぶし、サイズ調整、印刷レイアウトなどの機能を提供し、結果を端末のフォトライブラリに保存します。すべての機能は無料で、広告もアプリ内課金もありません。</p>
+
+    <h2>利用ルール</h2>
+    <p>本アプリで写真を処理する際は、処理する写真について合法的な権利を有していること、およびその利用が法令や第三者の正当な権利を侵害しないことを確認してください。</p>
+    <ul>
+      <li>写真の処理はすべてお客様の端末上で行われ、本アプリは写真をアップロード、保存、共有しません</li>
+      <li>本アプリを違法な内容や他者の権利を侵害する内容の作成・拡散に使用しないでください</li>
+    </ul>
+
+    <h2>重ね合わせ素材</h2>
+    <p>本アプリに組み込まれたスーツなどの重ね合わせ素材は、本アプリ内での写真合成にのみ提供されています。他の目的での使用や再配布は行わないでください。</p>
+
+    <h2>知的財産権</h2>
+    <p>本アプリのソフトウェア、インターフェースおよび関連する権利は開発者に帰属します。お客様には、本アプリが提供する機能に限り、非独占的・譲渡不可の限定的な使用許諾が付与されます。</p>
+
+    <h2>免責事項</h2>
+    <p>本アプリは「現状のまま」提供され、明示または黙示を問わずいかなる保証も行いません。生成される証明写真はあくまで参考用であり、お客様ご自身で関連する申込み・登録・発行機関の要件を満たしていることを確認する必要があります。写真の内容、処理結果、端末の互換性、フォトライブラリの権限などに起因するいかなる損害についても、開発者は適用法で認められる範囲において責任を負いません。</p>
+
+    <h2>変更と終了</h2>
+    <p>当社は本規約を随時更新することがあり、更新後の規約はアプリ内に表示されます。更新後の規約に同意できない場合は、本アプリの利用を中止できます。</p>
+
+    <h2>お問い合わせ</h2>
+    <p>本規約についてご質問がございましたら、以下までご連絡ください：vissachafnaoui197@gmail.com</p>
+  </section>
+
+  <!-- ================= 한국어 ================= -->
+  <section data-lang="ko" lang="ko">
+    <h1>서비스 이용약관</h1>
+
+    <h2>서비스 설명</h2>
+    <p>ID Photo Maker(증명사진 메이커)는 완전히 로컬에서 동작하는 오프라인 증명사진 제작 도구로, 배경 제거, 자유 지우기, 정장 합성, 배경 채우기, 크기 조정, 인쇄 배치 기능을 제공하며 결과를 시스템 사진 보관함에 저장합니다. 모든 기능은 무료이며 광고와 인앱 결제가 없습니다.</p>
+
+    <h2>이용 규칙</h2>
+    <p>본 앱으로 사진을 처리할 때는 처리하는 사진에 대한 적법한 권리를 보유하고 있어야 하며, 그 이용이 법령이나 제3자의 정당한 권리를 침해하지 않아야 합니다.</p>
+    <ul>
+      <li>사진 처리는 전적으로 이용자의 기기에서 이루어지며, 본 앱은 사진을 업로드, 저장 또는 공유하지 않습니다</li>
+      <li>본 앱을 불법적인 콘텐츠나 타인의 권리를 침해하는 콘텐츠의 제작·유포에 사용하지 마십시오</li>
+    </ul>
+
+    <h2>오버레이 소재</h2>
+    <p>본 앱에 내장된 정장 등의 오버레이 소재는 본 앱 내에서의 사진 합성 용도로만 제공됩니다. 다른 용도로 사용하거나 재배포하지 마십시오.</p>
+
+    <h2>지식재산권</h2>
+    <p>본 앱의 소프트웨어, 인터페이스 및 관련 권리는 개발자에게 귀속됩니다. 이용자에게는 본 앱이 제공하는 기능에 한하여 비독점적·양도 불가한 제한적 사용 라이선스가 부여됩니다.</p>
+
+    <h2>면책 조항</h2>
+    <p>본 앱은 "있는 그대로" 제공되며, 명시적이든 묵시적이든 어떠한 보증도 하지 않습니다. 생성된 증명사진은 참고용일 뿐이며, 이용자는 관련 접수·등록·발급 기관의 요건을 충족하는지 직접 확인해야 합니다. 사진 내용, 처리 결과, 기기 호환성 또는 사진 보관함 권한 등으로 인해 발생하는 어떠한 손실에 대해서도 개발자는 관련 법률이 허용하는 범위 내에서 책임을 지지 않습니다.</p>
+
+    <h2>변경 및 종료</h2>
+    <p>당사는 본 약관을 수시로 업데이트할 수 있으며, 업데이트된 약관은 앱 내에 표시됩니다. 업데이트된 약관에 동의하지 않으시면 본 앱의 이용을 중단하실 수 있습니다.</p>
+
+    <h2>문의하기</h2>
+    <p>본 약관에 대해 질문이 있으시면 다음으로 연락해 주십시오: vissachafnaoui197@gmail.com</p>
+  </section>
+
+  <!-- ================= Русский ================= -->
+  <section data-lang="ru" lang="ru">
+    <h1>Условия использования</h1>
+
+    <h2>Описание сервиса</h2>
+    <p>ID Photo Maker — полностью локальный офлайн-инструмент для создания фотографий на документы. Он поддерживает удаление фона, свободное стирание, наложение костюмов, заливку фона, изменение размера и подготовку к печати, а результат сохраняется в системную галерею. Все функции бесплатны, без рекламы и без встроенных покупок.</p>
+
+    <h2>Правила использования</h2>
+    <p>При обработке фотографий с помощью этого приложения вы обязаны убедиться, что обладаете законными правами на обрабатываемые фотографии и что их использование не нарушает законодательство или законные права третьих лиц.</p>
+    <ul>
+      <li>Обработка фотографий выполняется полностью на вашем устройстве; приложение не загружает, не хранит и не передаёт ваши фотографии</li>
+      <li>Не используйте это приложение для создания или распространения незаконного контента или контента, нарушающего права других лиц</li>
+    </ul>
+
+    <h2>Материалы для наложения</h2>
+    <p>Встроенные материалы для наложения (например, костюмы) предоставляются исключительно для композиции фотографий внутри этого приложения; не используйте их в иных целях и не распространяйте.</p>
+
+    <h2>Интеллектуальная собственность</h2>
+    <p>Программное обеспечение, интерфейс и связанные права на это приложение принадлежат разработчику. Вам предоставляется ограниченная, неисключительная и непередаваемая лицензия исключительно для функций, предоставляемых этим приложением.</p>
+
+    <h2>Отказ от ответственности</h2>
+    <p>Это приложение предоставляется «как есть», без каких-либо явных или подразумеваемых гарантий. Созданные фотографии на документы носят исключительно справочный характер; пользователь обязан самостоятельно подтвердить, что они соответствуют требованиям соответствующего органа регистрации, зачисления или выдачи документов. Разработчик не несёт ответственности, в пределах, допускаемых применимым законодательством, за любые убытки, возникшие из-за содержания фотографий, результатов обработки, совместимости устройства или разрешений на доступ к галерее.</p>
+
+    <h2>Изменения и прекращение</h2>
+    <p>Мы можем периодически обновлять настоящие условия; обновлённые условия будут отображаться в приложении. Если вы не согласны с обновлёнными условиями, вы можете прекратить использование этого приложения.</p>
+
+    <h2>Связаться с нами</h2>
+    <p>Если у вас есть вопросы по поводу настоящих условий, свяжитесь с нами: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= العربية (RTL) ================= -->
+  <section data-lang="ar" lang="ar" dir="rtl">
+    <h1>شروط الخدمة</h1>
+
+    <h2>وصف الخدمة</h2>
+    <p>ID Photo Maker أداة محلية بالكامل تعمل دون اتصال بالإنترنت لإنشاء صور الهوية. توفر إزالة الخلفية والمسح الحر وتركيب الملابس وملء الخلفية وضبط الحجم وتنسيق الطباعة، وتحفظ النتيجة في مكتبة صور النظام. جميع الوظائف مجانية وخالية من الإعلانات ومن عمليات الشراء داخل التطبيق.</p>
+
+    <h2>قواعد الاستخدام</h2>
+    <p>عند معالجة الصور باستخدام هذا التطبيق، يجب عليك التأكد من امتلاكك الحقوق القانونية للصور التي تعالجها، وأن استخدامك لا يخالف القوانين أو اللوائح أو الحقوق المشروعة للغير.</p>
+    <ul>
+      <li>تتم معالجة الصور بالكامل على جهازك؛ ولا يقوم هذا التطبيق برفع صورك أو تخزينها أو مشاركتها</li>
+      <li>يُرجى عدم استخدام هذا التطبيق لإنشاء أو نشر محتوى غير قانوني أو ينتهك حقوق الآخرين</li>
+    </ul>
+
+    <h2>مواد التركيب</h2>
+    <p>مواد التركيب المضمّنة (مثل الملابس) مقدَّمة حصريًا لتركيب الصور داخل هذا التطبيق؛ يُرجى عدم استخدامها لأغراض أخرى أو إعادة توزيعها.</p>
+
+    <h2>الملكية الفكرية</h2>
+    <p>يعود البرنامج وواجهة الاستخدام والحقوق المرتبطة بهذا التطبيق إلى المطوّر. ويُمنح لك ترخيص محدود وغير حصري وغير قابل للتحويل، وذلك حصريًا للوظائف التي يوفرها هذا التطبيق.</p>
+
+    <h2>إخلاء المسؤولية</h2>
+    <p>يُقدَّم هذا التطبيق «كما هو» دون أي ضمانات صريحة أو ضمنية من أي نوع. صور الهوية التي يتم إنشاؤها هي للإشارة العامة فقط، ويجب على المستخدم التحقق بنفسه من أنها تلبي متطلبات جهة التسجيل أو الالتحاق أو إصدار الوثائق المعنية. ولا يتحمل المطوّر المسؤولية، في الحدود التي يسمح بها القانون المعمول به، عن أي خسارة تنشأ عن محتوى الصور أو نتائج المعالجة أو توافق الجهاز أو أذونات مكتبة الصور.</p>
+
+    <h2>التغييرات والإنهاء</h2>
+    <p>قد نقوم بتحديث هذه الشروط من وقت لآخر، وستُعرض الشروط المحدّثة داخل التطبيق. وإذا لم توافق على الشروط المحدّثة، يمكنك التوقف عن استخدام هذا التطبيق.</p>
+
+    <h2>اتصل بنا</h2>
+    <p>إذا كانت لديك أي أسئلة بشأن هذه الشروط، فيرجى الاتصال بنا على: vissachafnaoui197@gmail.com.</p>
+  </section>
+
+  <!-- ================= हिन्दी ================= -->
+  <section data-lang="hi" lang="hi">
+    <h1>सेवा की शर्तें</h1>
+
+    <h2>सेवा विवरण</h2>
+    <p>ID Photo Maker एक पूरी तरह से स्थानीय और ऑफ़लाइन आईडी फ़ोटो बनाने वाला टूल है। यह बैकग्राउंड हटाना, मुक्त मिटाना, सूट ओवरले, बैकग्राउंड भरना, आकार समायोजन और प्रिंट लेआउट प्रदान करता है, और परिणाम को आपके सिस्टम फ़ोटो लाइब्रेरी में सहेजता है। सभी सुविधाएँ निःशुल्क हैं, विज्ञापन-रहित हैं और इन-ऐप खरीदारी रहित हैं।</p>
+
+    <h2>उपयोग के नियम</h2>
+    <p>इस ऐप से फ़ोटो संसाधित करते समय आपको यह सुनिश्चित करना होगा कि आपके पास संसाधित की जाने वाली फ़ोटो पर कानूनी अधिकार हैं और आपका उपयोग किसी कानून, विनियम या तृतीय पक्ष के वैध अधिकारों का उल्लंघन नहीं करता।</p>
+    <ul>
+      <li>फ़ोटो प्रोसेसिंग पूरी तरह से आपके डिवाइस पर होती है; यह ऐप आपकी फ़ोटो को अपलोड, संग्रहीत या साझा नहीं करता</li>
+      <li>इस ऐप का उपयोग अवैध सामग्री या दूसरों के अधिकारों का उल्लंघन करने वाली सामग्री बनाने या फैलाने के लिए न करें</li>
+    </ul>
+
+    <h2>ओवरले सामग्री</h2>
+    <p>ऐप में शामिल ओवरले सामग्री (जैसे सूट) केवल इस ऐप के भीतर फ़ोटो कंपोज़िंग के लिए प्रदान की गई है; कृपया इसका उपयोग अन्य उद्देश्यों के लिए या पुनर्वितरण के लिए न करें।</p>
+
+    <h2>बौद्धिक संपदा</h2>
+    <p>इस ऐप का सॉफ़्टवेयर, इंटरफ़ेस और संबंधित अधिकार डेवलपर के हैं। आपको केवल इस ऐप द्वारा प्रदान की गई सुविधाओं के लिए एक गैर-अनन्य, अहस्तांतरणीय और सीमित उपयोग लाइसेंस दिया जाता है।</p>
+
+    <h2>अस्वीकरण</h2>
+    <p>यह ऐप "जैसा है" के आधार पर प्रदान किया गया है, बिना किसी स्पष्ट या निहित वारंटी के। उत्पन्न आईडी फ़ोटो केवल सामान्य संदर्भ के लिए हैं; उपयोगकर्ता को स्वयं पुष्टि करनी होगी कि वे संबंधित पंजीकरण, नामांकन या दस्तावेज़ जारी करने वाले प्राधिकरण की आवश्यकताओं को पूरा करते हैं। फ़ोटो सामग्री, प्रोसेसिंग परिणाम, डिवाइस संगतता या फ़ोटो लाइब्रेरी अनुमतियों के कारण होने वाली किसी भी हानि के लिए डेवलपर, लागू कानून द्वारा अनुमत सीमा तक, उत्तरदायी नहीं होगा।</p>
+
+    <h2>परिवर्तन और समाप्ति</h2>
+    <p>हम समय-समय पर इन शर्तों को अपडेट कर सकते हैं, और अपडेट की गई शर्तें ऐप के भीतर दिखाई जाएँगी। यदि आप अपडेट की गई शर्तों से सहमत नहीं हैं, तो आप इस ऐप का उपयोग बंद कर सकते हैं।</p>
+
+    <h2>संपर्क करें</h2>
+    <p>यदि इन शर्तों के बारे में आपके कोई प्रश्न हैं, तो कृपया हमसे यहाँ संपर्क करें: vissachafnaoui197@gmail.com</p>
+  </section>
+
+  <!-- ================= Türkçe ================= -->
+  <section data-lang="tr" lang="tr">
+    <h1>Hizmet Şartları</h1>
+
+    <h2>Hizmet Açıklaması</h2>
+    <p>ID Photo Maker, tamamen yerel ve çevrimdışı çalışan bir vesikalık fotoğraf oluşturma aracıdır. Arka plan kaldırma, serbest silme, takım elbise giydirme, arka plan doldurma, boyut ayarlama ve baskı düzeni özelliklerini sunar ve sonucu sistem fotoğraf galerinize kaydeder. Tüm özellikler ücretsizdir, reklamsızdır ve uygulama içi satın alma içermez.</p>
+
+    <h2>Kullanım Kuralları</h2>
+    <p>Bu uygulamayla fotoğraf işlerken, işlenen fotoğraflar üzerinde yasal haklara sahip olduğunuzdan ve kullanımınızın yasalara, düzenlemelere veya üçüncü tarafların meşru haklarına aykırı olmadığından emin olmalısınız.</p>
+    <ul>
+      <li>Fotoğraf işleme tamamen cihazınızda gerçekleşir; bu uygulama fotoğraflarınızı yüklemez, saklamaz veya paylaşmaz</li>
+      <li>Bu uygulamayı yasa dışı içerik veya başkalarının haklarını ihlal eden içerik oluşturmak ya da yaymak için kullanmayın</li>
+    </ul>
+
+    <h2>Kaplama Materyalleri</h2>
+    <p>Uygulamayla birlikte sunulan kaplama materyalleri (ör. takım elbiseler) yalnızca bu uygulama içinde fotoğraf birleştirme amacıyla sağlanmıştır; bunları başka amaçlarla kullanmayın veya yeniden dağıtmayın.</p>
+
+    <h2>Fikri Mülkiyet</h2>
+    <p>Bu uygulamanın yazılımı, arayüzü ve ilgili hakları geliştiriciye aittir. Size yalnızca bu uygulamanın sunduğu özellikler için münhasır olmayan, devredilemez ve sınırlı bir kullanım lisansı verilir.</p>
+
+    <h2>Sorumluluk Reddi</h2>
+    <p>Bu uygulama, herhangi bir açık veya zımni garanti olmaksızın "olduğu gibi" sunulmaktadır. Oluşturulan vesikalık fotoğraflar yalnızca genel referans amaçlıdır; kullanıcı bunların ilgili kayıt, başvuru veya belge düzenleme kurumunun gereksinimlerini karşıladığını kendisi doğrulamalıdır. Geliştirici; fotoğraf içeriği, işleme sonuçları, cihaz uyumluluğu veya fotoğraf galerisi izinlerinden kaynaklanan herhangi bir kayıptan, yürürlükteki yasaların izin verdiği ölçüde sorumlu değildir.</p>
+
+    <h2>Değişiklikler ve Fesih</h2>
+    <p>Bu şartları zaman zaman güncelleyebiliriz ve güncellenen şartlar uygulama içinde gösterilecektir. Güncellenen şartları kabul etmiyorsanız bu uygulamayı kullanmayı bırakabilirsiniz.</p>
+
+    <h2>Bize Ulaşın</h2>
+    <p>Bu şartlarla ilgili sorularınız varsa lütfen bizimle şu adresten iletişime geçin: vissachafnaoui197@gmail.com</p>
+  </section>
+
+  <!-- ================= Bahasa Indonesia ================= -->
+  <section data-lang="id" lang="id">
+    <h1>Ketentuan Layanan</h1>
+
+    <h2>Deskripsi Layanan</h2>
+    <p>ID Photo Maker adalah alat pembuat foto identitas yang sepenuhnya lokal dan offline. Aplikasi ini menyediakan penghapusan latar belakang, penghapusan bebas, penempatan jas, pengisian latar belakang, penyesuaian ukuran, dan tata letak cetak, serta menyimpan hasilnya ke galeri foto sistem Anda. Semua fitur gratis, tanpa iklan, dan tanpa pembelian dalam aplikasi.</p>
+
+    <h2>Aturan Penggunaan</h2>
+    <p>Saat memproses foto dengan aplikasi ini, Anda harus memastikan bahwa Anda memiliki hak hukum atas foto yang diproses dan bahwa penggunaan Anda tidak melanggar hukum, peraturan, atau hak sah pihak ketiga.</p>
+    <ul>
+      <li>Pemrosesan foto sepenuhnya dilakukan di perangkat Anda; aplikasi ini tidak mengunggah, menyimpan, atau membagikan foto Anda</li>
+      <li>Jangan gunakan aplikasi ini untuk membuat atau menyebarkan konten ilegal atau yang melanggar hak orang lain</li>
+    </ul>
+
+    <h2>Materi Overlay</h2>
+    <p>Materi overlay yang disertakan (seperti jas) disediakan khusus untuk komposisi foto di dalam aplikasi ini; jangan gunakan untuk tujuan lain atau mendistribusikannya kembali.</p>
+
+    <h2>Kekayaan Intelektual</h2>
+    <p>Perangkat lunak, antarmuka, dan hak terkait aplikasi ini adalah milik pengembang. Anda diberikan lisensi penggunaan yang terbatas, tidak eksklusif, dan tidak dapat dialihkan, khusus untuk fitur yang disediakan aplikasi ini.</p>
+
+    <h2>Penafian</h2>
+    <p>Aplikasi ini disediakan "sebagaimana adanya" tanpa jaminan tersurat maupun tersirat dalam bentuk apa pun. Foto identitas yang dihasilkan hanya untuk referensi umum; pengguna harus memastikan sendiri bahwa foto tersebut memenuhi persyaratan otoritas pendaftaran, penerimaan, atau penerbitan dokumen yang bersangkutan. Pengembang tidak bertanggung jawab, sejauh diizinkan oleh hukum yang berlaku, atas kerugian apa pun yang timbul dari konten foto, hasil pemrosesan, kompatibilitas perangkat, atau izin galeri foto.</p>
+
+    <h2>Perubahan dan Penghentian</h2>
+    <p>Kami dapat memperbarui ketentuan ini dari waktu ke waktu, dan ketentuan yang diperbarui akan ditampilkan di dalam aplikasi. Jika Anda tidak menyetujui ketentuan yang diperbarui, Anda dapat berhenti menggunakan aplikasi ini.</p>
+
+    <h2>Hubungi Kami</h2>
+    <p>Jika Anda memiliki pertanyaan tentang ketentuan ini, silakan hubungi kami di: vissachafnaoui197@gmail.com</p>
+  </section>
+
+  <script>
+    (function () {
+      // 14 种语言：与 lib/data/storage/locale_controller.dart 的 kSupportedLanguages 一致
+      var LANGS = {
+        zh: { title: '用户协议 - ID Photo Maker',           copy: '复制当前语言全文',       copied: '已复制 ✓' },
+        // 繁体中文（台湾用语），文案与 assets/legal/terms_zh_Hant.json 逐字一致
+        "zh-hant": { title: '使用者條款 - ID Photo Maker', copy: '複製目前語言全文', copied: '已複製 ✓' },
+        en: { title: 'Terms of Service - ID Photo Maker',   copy: 'Copy full text',          copied: 'Copied ✓' },
+        es: { title: 'Términos de Servicio - ID Photo Maker', copy: 'Copiar texto completo', copied: 'Copiado ✓' },
+        fr: { title: "Conditions d'Utilisation - ID Photo Maker", copy: 'Copier tout le texte', copied: 'Copié ✓' },
+        de: { title: 'Nutzungsbedingungen - ID Photo Maker', copy: 'Vollständigen Text kopieren', copied: 'Kopiert ✓' },
+        pt: { title: 'Termos de Serviço - ID Photo Maker',  copy: 'Copiar texto completo',   copied: 'Copiado ✓' },
+        it: { title: 'Termini di Servizio - ID Photo Maker', copy: 'Copia tutto il testo',   copied: 'Copiato ✓' },
+        ja: { title: '利用規約 - ID Photo Maker',           copy: '全文をコピー',            copied: 'コピーしました ✓' },
+        ko: { title: '서비스 이용약관 - ID Photo Maker',      copy: '전체 텍스트 복사',        copied: '복사됨 ✓' },
+        ru: { title: 'Условия использования - ID Photo Maker', copy: 'Скопировать весь текст', copied: 'Скопировано ✓' },
+        ar: { title: 'شروط الخدمة - ID Photo Maker',        copy: 'نسخ النص بالكامل',        copied: 'تم النسخ ✓' },
+        hi: { title: 'सेवा की शर्तें - ID Photo Maker',       copy: 'पूरा टेक्स्ट कॉपी करें',   copied: 'कॉपी हो गया ✓' },
+        tr: { title: 'Hizmet Şartları - ID Photo Maker',    copy: 'Tüm metni kopyala',       copied: 'Kopyalandı ✓' },
+        id: { title: 'Ketentuan Layanan - ID Photo Maker',  copy: 'Salin seluruh teks',      copied: 'Tersalin ✓' }
+      };
+
+      var select = document.getElementById('langSelect');
+      var sections = document.querySelectorAll('section[data-lang]');
+      var copyBtn = document.getElementById('copyBtn');
+      var copyTimer = null;
+
+      function currentLang() {
+        var active = document.querySelector('section[data-lang].active');
+        return active ? active.getAttribute('data-lang') : 'en';
+      }
+
+      function setLang(lang) {
+        if (!LANGS[lang]) lang = 'en';
+
+        sections.forEach(function (s) {
+          s.classList.toggle('active', s.getAttribute('data-lang') === lang);
+        });
+        select.value = lang;
+        document.documentElement.setAttribute('lang', lang);
+        document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+        document.title = LANGS[lang].title;
+        copyBtn.textContent = LANGS[lang].copy;
+
+        // 同步到 URL（本地 file:// 打开时浏览器可能禁止，忽略异常即可）
+        try {
+          if (history.replaceState) history.replaceState(null, '', '#' + lang);
+        } catch (e) {}
+      }
+
+      select.addEventListener('change', function () {
+        setLang(select.value);
+        window.scrollTo(0, 0);
+      });
+
+      function fallbackCopy(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.top = '-1000px';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+
+      function flashCopied() {
+        var lang = currentLang();
+        if (copyTimer) clearTimeout(copyTimer);
+        copyBtn.textContent = LANGS[lang].copied;
+        copyTimer = setTimeout(function () {
+          copyBtn.textContent = LANGS[lang].copy;
+        }, 1600);
+      }
+
+      copyBtn.addEventListener('click', function () {
+        var lang = currentLang();
+        var sec = document.querySelector('section[data-lang="' + lang + '"]');
+        if (!sec) return;
+
+        // 按块提取纯文本，标题前留空行，列表项加 "- " 前缀
+        var blocks = sec.querySelectorAll('h1, h2, p, li');
+        var lines = [];
+        blocks.forEach(function (el) {
+          var text = el.textContent.replace(/\s+/g, ' ').trim();
+          if (!text) return;
+          if (el.tagName === 'H1' || el.tagName === 'H2') {
+            if (lines.length) lines.push('');
+            lines.push(text);
+          } else if (el.tagName === 'LI') {
+            lines.push('- ' + text);
+          } else {
+            lines.push(text);
+          }
+        });
+
+        var plain = lines.join('\n');
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(plain).then(flashCopied, function () {
+            fallbackCopy(plain);
+            flashCopied();
+          });
+        } else {
+          fallbackCopy(plain);
+          flashCopied();
+        }
+      });
+
+      // 初始化：URL hash → 浏览器语言（zh-TW / zh-HK / zh-MO 走繁体）→ 英文
+      var hash = (location.hash || '').replace('#', '').toLowerCase();
+      var nav = (navigator.language || 'en').toLowerCase();
+      var navCode = nav.split('-')[0];
+      if (navCode === 'zh' && /-(tw|hk|mo)/.test(nav)) navCode = 'zh-hant';
+      setLang(LANGS[hash] ? hash : (LANGS[navCode] ? navCode : 'en'));
+    })();
+  </script>
+</body>
+</html>

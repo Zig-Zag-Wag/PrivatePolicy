@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>任意转 AnyConvert 隐私政策 / AnyConvert Privacy Policy</title>
+  <meta name="description" content="任意转（AnyConvert）隐私政策：完全离线，不上传文件，不收集个人信息。 / AnyConvert privacy policy: fully offline, no uploads, no personal data collected.">
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0 auto; max-width: 720px; padding: 24px 16px 56px;
+      font: 16px/1.7 -apple-system, "Segoe UI", Roboto, "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      color: #1f2328; background: #fff;
+    }
+    header { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+    nav { display: flex; gap: 8px; flex-wrap: wrap; }
+    nav a, header button {
+      font: inherit; font-size: .9rem; padding: 5px 12px; border-radius: 999px;
+      border: 1px solid #d0d5dd; background: transparent; color: inherit;
+      text-decoration: none; cursor: pointer;
+    }
+    nav a[aria-current="true"] { background: #2563eb; border-color: #2563eb; color: #fff; }
+    nav a:focus-visible, header button:focus-visible { outline: 2px solid #2563eb; outline-offset: 2px; }
+    h1 { font-size: 1.65rem; margin: 18px 0 4px; }
+    h2 { font-size: 1.12rem; margin: 26px 0 6px; }
+    .updated { color: #667085; font-size: .9rem; margin: 0 0 16px; }
+    .highlight { background: rgba(37, 99, 235, .1); border-left: 4px solid #2563eb; padding: 12px 14px; border-radius: 8px; margin: 18px 0; }
+    ul { padding-left: 22px; }
+    li { margin: 3px 0; }
+    footer { margin-top: 36px; border-top: 1px solid #d0d5dd; padding-top: 14px; font-size: .85rem; color: #667085; }
+    footer a { color: inherit; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e6edf3; background: #0d1117; }
+      nav a, header button { border-color: #30363d; }
+      nav a[aria-current="true"] { background: #1f6feb; border-color: #1f6feb; }
+      .updated, footer { color: #9198a1; }
+      footer { border-color: #30363d; }
+      .highlight { background: rgba(88, 166, 255, .12); border-left-color: #58a6ff; }
+      a { color: #58a6ff; }
+    }
+    @media print {
+      nav, header button, footer { display: none !important; }
+      body { max-width: none; padding: 0; color: #000; background: #fff; }
+      .highlight { background: none; border-left: 2px solid #000; }
+      h2 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body data-title-zh="任意转 AnyConvert 隐私政策" data-title-en="AnyConvert Privacy Policy" data-copy-zh="复制全文" data-copy-en="Copy all">
+  <header>
+    <nav aria-label="语言 / Language">
+      <a href="privacy-zh.html" lang="zh-CN">中文</a>
+      <a href="index.html">全部文档 / All documents</a>
+    </nav>
+    <button id="copy" type="button" data-copied-zh="已复制" data-copied-en="Copied">复制全文</button>
+  </header>
+  <main>
+    <section id="lang-en" data-lang="en" lang="en">
+      <h1>AnyConvert Privacy Policy</h1>
+      <p class="updated">Last updated: 2026-11-12</p>
+      <p class="highlight">Five promises: no uploads, no network capability, no personal data, local-only reads and writes, nothing leaves the device.</p>
+      <h2>1. What we process</h2>
+      <ul>
+        <li>Files you pick: read on this device only after you press Start, solely to produce the result.</li>
+        <li>Conversion history: source name, target format, size, time and failure reason. At most 100 rows, clearable at any time.</li>
+        <li>Diagnostic log: local-only error time, error code, file type and size (no file contents, no full paths). At most 500 entries, oldest overwritten, never uploaded.</li>
+        <li>Settings: theme, language, output location, naming rule and conflict policy, stored locally only.</li>
+      </ul>
+      <h2>2. Your files never leave the device</h2>
+      <p>Format detection, decoding, encoding, composition and packing all run on your device. There is no server and no upload endpoint.</p>
+      <p>This app does not request the INTERNET permission. You can verify it in the system app-permission screen: no network entry is listed.</p>
+      <p>This app makes no network request at all; the system privacy report can verify it. iOS has no network-permission switch, so we rely on the privacy report and the code itself rather than a permission declaration.</p>
+      <h2>3. No personal data collection</h2>
+      <ul>
+        <li>No accounts and no sign-in.</li>
+        <li>No analytics, crash-reporting or advertising SDKs.</li>
+        <li>No access to contacts, location, clipboard or device identifiers.</li>
+      </ul>
+      <h2>4. Minimal permissions</h2>
+      <ul>
+        <li>Files are picked with the system picker; no storage permission is requested.</li>
+        <li>The add-only photo permission is requested only when saving to the album; album content is never read.</li>
+        <li>If the album write fails you can save into the app documents folder instead.</li>
+      </ul>
+      <h2>5. Results and metadata</h2>
+      <p>Conversions strip EXIF metadata, including location. Output is written only where you choose, and source files are never overwritten.</p>
+      <h2>6. Your control</h2>
+      <ul>
+        <li>Clear cache: removes temp files and thumbnails, keeps history and settings.</li>
+        <li>Clear history: removes history rows, keeps converted files.</li>
+        <li>Uninstall: removes local settings, history and files inside the app folder.</li>
+      </ul>
+      <h2>7. Contact</h2>
+      <p>The app is fully offline and has no network contact channel. Please use the developer contact listed on the store page.</p>
+    </section>
+  </main>
+  <footer>
+    <p>任意转 AnyConvert · <a href="index.html">全部文档 / All documents</a> · <span>com.zizworks.anyconvert</span></p>
+  </footer>
+  <script>
+    (function () {
+      var langs = ['zh', 'en'];
+      var body = document.body;
+      function pick() {
+        var hash = (location.hash || '').replace('#', '').toLowerCase();
+        if (langs.indexOf(hash) >= 0) return hash;
+        var q = new URLSearchParams(location.search).get('lang');
+        if (q && langs.indexOf(q.toLowerCase()) >= 0) return q.toLowerCase();
+        var n = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        if (n.indexOf('zh') === 0) return 'zh';
+        return 'en';
+      }
+      function apply(l) {
+        langs.forEach(function (k) {
+          var s = document.getElementById('lang-' + k);
+          if (s) s.hidden = (k !== l);
+          var a = document.getElementById('switch-' + k);
+          if (a) a.setAttribute('aria-current', k === l ? 'true' : 'false');
+        });
+        document.documentElement.lang = l === 'zh' ? 'zh-CN' : 'en';
+        document.title = l === 'zh' ? body.getAttribute('data-title-zh') : body.getAttribute('data-title-en');
+        var btn = document.getElementById('copy');
+        if (btn) btn.textContent = l === 'zh' ? body.getAttribute('data-copy-zh') : body.getAttribute('data-copy-en');
+      }
+      window.addEventListener('hashchange', function () { apply(pick()); });
+      apply(pick());
+    })();
+  </script>
+  <script>
+    (function () {
+      var btn = document.getElementById('copy');
+      if (!btn) return;
+      function current() {
+        var s = document.querySelector('section[data-lang]:not([hidden])');
+        return s ? s.innerText : document.body.innerText;
+      }
+      function flash() {
+        var zh = document.documentElement.lang === 'zh-CN';
+        var restore = zh ? body.getAttribute('data-copy-zh') : body.getAttribute('data-copy-en');
+        btn.textContent = zh ? btn.getAttribute('data-copied-zh') : btn.getAttribute('data-copied-en');
+        setTimeout(function () { btn.textContent = restore; }, 1600);
+      }
+      function fallback(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.top = '-1000px';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); flash(); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+      btn.addEventListener('click', function () {
+        var text = current();
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(flash, function () { fallback(text); });
+        } else { fallback(text); }
+      });
+    })();
+  </script>
+</body>
+</html>
