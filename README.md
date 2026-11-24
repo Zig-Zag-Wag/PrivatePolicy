@@ -15,7 +15,7 @@
 
 首页（人看的入口）：https://zig-zag-wag.github.io/PrivatePolicy/
 
-站点已上线（2026-11-24）：仓库 [Zig-Zag-Wag/PrivatePolicy](https://github.com/Zig-Zag-Wag/PrivatePolicy)，Pages 来源 `main` / `/ (root)`，HTTPS 已强制。以后同步完条款，`git push` 一分钟后线上就更新。
+站点已上线（2026-11-25）：仓库 [Zig-Zag-Wag/PrivatePolicy](https://github.com/Zig-Zag-Wag/PrivatePolicy)，Pages 来源 `main` / `/ (root)`，HTTPS 已强制。以后同步完条款，`git push` 一分钟后线上就更新。
 
 ## 目录结构
 
@@ -89,6 +89,7 @@ node scripts\check-links.js
 ## 维护备注
 
 - 条款正文里如果更新了「最后更新日期」，同步后顺手改一下首页页脚的 `Updated` 日期。
-- 首页和各 App 索引页面是自己写的，条款文件是复制品；两边的「联系邮箱」目前都是 `vissachafnaoui197@gmail.com`。
-- Morse Craft 与 Any Convert 的条款正文里没有写具体邮箱（写的是"以商店开发者联系方式为准"），如果想让审阅方直接在页面里看到邮箱，需要在各自 App 项目里补上，再同步过来。
+- 首页和各 App 索引页面是自己写的，条款文件是复制品；两边都用 `zizworks.eu.org@gmail.com`（2026-11-25 统一替换旧地址；Morse Craft 与 Any Convert 原来只写「见商店联系方式」，这次补上了具体地址）。
+- MD Reader 与 Any Convert 的条款 HTML 来自项目内生成器（`tools/render_legal_html.dart`、`tool/build-legal-assets.ps1`）：改条款要改 `assets/legal/*.json` 再重新生成，不要直接改 HTML。
+- 各项目里的 `report/log.md` 是历史记录，仍保留旧邮箱，属于历史条目，不必同步。
 - 如果以后改仓库名或绑定自定义域名，`404.html` 里的 `/PrivatePolicy/` 前缀、README 里的四个商店网址都要一起改。
